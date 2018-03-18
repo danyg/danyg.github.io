@@ -1,0 +1,50 @@
+/**
+ * @author Daniel Goberitz <danyg>
+ */
+html {
+	--page-color: #fff;
+	--workarea-color: #666;
+	--box-shadow: 8px 8px 15px 5px rgba(0,0,0,.5);
+	--page-margin: 1cm;
+}
+
+.din-a4 {
+	width: 210mm;
+	height: 297mm;
+
+	background: var(--page-color);
+
+}
+
+.page-breaker {
+	page-break-after: always;
+}
+
+@media screen {
+	body {
+		width: 210mm;
+
+		background: var(--page-color);
+		box-shadow: var(--box-shadow);
+		padding: var(--page-margin);
+
+		margin: 10px auto;
+	}
+
+	html {
+		background: #666;
+	}
+	.din-a4 {
+		box-shadow: var(--box-shadow);
+		padding: var(--page-margin);
+		margin: 10px auto;
+	}
+
+	body.with-pages {
+		width: initial;
+		background: #666;
+		box-shadow: initial;
+		margin: 0;
+	}
+
+}

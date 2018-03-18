@@ -1,0 +1,127 @@
+/**
+ * @author Daniel Goberitz <danyg>
+ */
+body {
+	--vertical-padding: 6px;
+	--horizontal-padding: 6px;
+	--first-color: #fff;
+	--second-color: #d1d1d1;
+	--separator-color: #c0c0c0;
+	--link-color: CornflowerBlue;
+	--text-color: #222;
+	--second-text-color: #666;
+	--col-background-color: var(--second-color);
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0%;
+	padding: 0%;
+	font: normal 14px/22px "Trebuchet MS", Sans-Serif;
+	color: var(--text-color);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0%;
+	padding: 0 0 var(--vertical-padding) 0;
+}
+p {
+	padding: 0 0 var(--vertical-padding) 0;
+	margin: 0;
+}
+p:last-child {
+}
+a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+img.person {
+	width: 90%;
+	align-self: center;
+	border-radius: 100%;
+	box-shadow: 1px 1px 1px 1px rgba(128,128,128,.5);
+	background: var(--first-color);
+	padding: 2px;
+}
+
+section {
+	display: flex;
+	border-top: solid 2px var(--separator-color);
+	flex-direction: row;
+}
+
+section .col,
+section >h1 {
+	display: flex;
+	flex-direction: column;
+	background: var(--col-background-color);
+	margin-right: var(--horizontal-padding);
+	padding: var(--vertical-padding) 0px;
+	width: 20%;
+	padding-left: var(--horizontal-padding);
+}
+section .main,
+section >p {
+	width: 80%;
+	padding: var(--vertical-padding) 0;
+}
+section .main >p:last-child {
+	padding: 0;
+}
+section:first-child .main {
+	padding-top: 0;
+}
+
+section:first-child {
+	border-top: none;
+}
+section h2 {
+	font-size: 1.15em;
+}
+
+i {
+	font-size: 20px;
+	margin-right: 3px;
+	width: 1.5em;
+	text-align: center;
+}
+
+.center-contents {
+	align-items: center;
+    justify-content: center;
+}
+
+q {
+	font-style: italic;
+}
+
+.-line-height-2 {
+	line-height: 2em;
+}
+
+h1.little-header {
+	font-size: 1.25em;
+}
+
+ul.no-bullets {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.no-bullets li {
+	padding: 0;
+	margin: 0;
+}
+
+.date-range {
+	font-style: italic;
+	color: var(--second-text-color);
+}
+
