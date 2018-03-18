@@ -161,6 +161,7 @@ h1 {
 	section h6,
 	section p,
 	section ul,
+	section ul.no-bullets,
 	section dd {
 		padding: var(--vertical-padding) var(--horizontal-padding);
 	}
