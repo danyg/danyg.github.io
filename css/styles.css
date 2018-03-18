@@ -139,18 +139,15 @@ h1 {
 }
 
 @media (max-width: 600px) {
-	section.vcard:after {
-		content: '.';
-		visibility: hidden;
+	section.vcard {
+		display: flex;
 	}
 	section.vcard .col {
-		float: left;
 		width: 30%;
 		margin: 0px var(--horizontal-padding);
 		background: transparent;
 	}
 	section.vcard .main {
-		float: left;
 		width: 67%;
 	}
 	section {
