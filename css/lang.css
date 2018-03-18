@@ -9,6 +9,7 @@ dl.selector {
 
 dl.selector dd {
 	padding: 10px;
+	margin: 0%;
 	background: #fff;
 }
 dl.selector dd:first-child {
@@ -21,5 +22,19 @@ dl.selector dd:last-child {
 @media print {
 	dl.selector {
 		display: none;
+	}
+}
+@media (max-width: 600px) {
+	dl.selector {
+		position: initial;
+		display: flex;
+		justify-content: flex-end;
+		margin: 0;
+		padding: 0;
+	}
+	dl.selector dd {
+		padding: 0;
+		border-radius: initial;
+		width: 50px;
 	}
 }

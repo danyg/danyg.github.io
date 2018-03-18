@@ -31,8 +31,6 @@ p {
 	padding: 0 0 var(--vertical-padding) 0;
 	margin: 0;
 }
-p:last-child {
-}
 a {
 	color: var(--link-color);
 	text-decoration: none;
@@ -51,29 +49,9 @@ img.person {
 }
 
 section {
-	display: flex;
 	border-top: solid 2px var(--separator-color);
-	flex-direction: row;
 }
 
-section .col,
-section >h1 {
-	display: flex;
-	flex-direction: column;
-	background: var(--col-background-color);
-	margin-right: var(--horizontal-padding);
-	padding: var(--vertical-padding) 0px;
-	width: 20%;
-	padding-left: var(--horizontal-padding);
-}
-section .main,
-section >p {
-	width: 80%;
-	padding: var(--vertical-padding) 0;
-}
-section .main >p:last-child {
-	padding: 0;
-}
 section:first-child .main {
 	padding-top: 0;
 }
@@ -125,3 +103,68 @@ ul.no-bullets li {
 	color: var(--second-text-color);
 }
 
+section .col,
+section >h1 {
+	background: var(--col-background-color);
+}
+h1 {
+	font-size: 1.3em;
+}
+@media (max-width: 210mm) and (min-width: 600px) {
+	h1 {
+		font-size: 2.5vw;
+	}
+}
+@media (min-width: 600px) {
+
+	section {
+		display: flex;
+		flex-direction: row;
+	}
+
+	section .col,
+	section >h1 {
+		display: flex;
+		flex-direction: column;
+		margin-right: var(--horizontal-padding);
+		padding: var(--vertical-padding) 0px;
+		width: 20%;
+		padding-left: var(--horizontal-padding);
+	}
+	section .main,
+	section >p {
+		width: 80%;
+		padding: var(--vertical-padding) 0;
+	}
+}
+
+@media (max-width: 600px) {
+	section.vcard:after {
+		content: '.';
+		visibility: hidden;
+	}
+	section.vcard .col {
+		float: left;
+		width: 30%;
+		margin: 0px var(--horizontal-padding);
+		background: transparent;
+	}
+	section.vcard .main {
+		float: left;
+		width: 67%;
+	}
+	section {
+		padding-bottom: var(--horizontal-padding);
+	}
+	section h1,
+	section h2,
+	section h3,
+	section h4,
+	section h5,
+	section h6,
+	section p,
+	section ul,
+	section dd {
+		padding: var(--vertical-padding) var(--horizontal-padding);
+	}
+}

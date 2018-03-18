@@ -32,14 +32,16 @@
 
 			for(let section of sectionsToAllocate) {
 				const h = this.getOuterHeightOf(section);
-				if(currentHeight + h < maxHeight) {
+				if(currentHeight + h < maxHeight || h > maxHeight) {
 					page.appendChild(section);
 					currentHeight += h;
 					remainingSections.splice(0,1);
 					lastSection = section;
 					continue;
 				}
-				this.addClass(lastSection, 'page-breaker');
+				if(lastSection) {
+					this.addClass(lastSection, 'page-breaker');
+				}
 				break;
 			}
 

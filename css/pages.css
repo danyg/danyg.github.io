@@ -22,29 +22,45 @@ html {
 
 @media screen {
 	body {
-		width: 210mm;
-
 		background: var(--page-color);
 		box-shadow: var(--box-shadow);
-		padding: var(--page-margin);
-
-		margin: 10px auto;
 	}
 
 	html {
 		background: #666;
+	}
+
+}
+
+@media (max-width: 219mm) {
+	.din-a4 {
+		width: initial;
+		height: initial;
+		padding: 0%;
+	}
+}
+@media (min-width: 220mm) {
+	body {
+		width: 210mm;
+		margin: 10px auto;
+	}
+	body.with-pages {
+		width: initial;
+		background: #666;
+		box-shadow: initial;
+		margin: 0;
+		padding: var(--page-margin);
 	}
 	.din-a4 {
 		box-shadow: var(--box-shadow);
 		padding: var(--page-margin);
 		margin: 10px auto;
 	}
+}
 
-	body.with-pages {
-		width: initial;
-		background: #666;
-		box-shadow: initial;
-		margin: 0;
+@media (max-width: 600px) {
+	body {
+		font-size: 12px;
+		line-height: 18px;
 	}
-
 }
