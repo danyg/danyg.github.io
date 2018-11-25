@@ -22,11 +22,11 @@ dl.selector dd:last-child {
 
 @media (max-width: 600px) {
 	dl.selector {
-		position: initial;
 		display: flex;
 		justify-content: flex-end;
 		margin: 0;
-		padding: 0;
+		/* padding: 0; */
+		top: 0;
 	}
 	dl.selector dd {
 		padding: 0;

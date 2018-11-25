@@ -11,9 +11,14 @@ html {
 .din-a4 {
 	width: 210mm;
 	height: 297mm;
-
 	background: var(--page-color);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
 
+.din-a4 section {
+	flex-grow: 1;
 }
 
 .page-breaker {
@@ -29,13 +34,12 @@ html {
 	html {
 		background: #666;
 	}
-
 }
 
 @media (max-width: 219mm) {
 	.din-a4 {
-		width: initial;
-		height: initial;
+		/*width: initial;
+		height: initial;*/
 		padding: 0%;
 	}
 }
@@ -55,12 +59,5 @@ html {
 		box-shadow: var(--box-shadow);
 		padding: var(--page-margin);
 		margin: 10px auto;
-	}
-}
-
-@media (max-width: 600px) {
-	body {
-		font-size: 12px;
-		line-height: 18px;
 	}
 }

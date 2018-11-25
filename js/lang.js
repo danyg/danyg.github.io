@@ -43,8 +43,8 @@
 		}
 
 		showLang(lang) {
-			document.body.querySelectorAll(`[lang]:not([lang=${lang}])`).forEach(itm => {
-				itm.remove();
+			document.body.querySelectorAll(`[lang]`).forEach(itm => {
+				itm.style.display =	itm.getAttribute('lang') === lang ? '' : 'none';
 			});
 		}
 
@@ -99,7 +99,12 @@
 
 		changeLang(lang) {
 			const l = window.location;
-			window.location = `${l.protocol}//${l.host}${l.pathname}?lang=${lang}`
+			const state = {
+				lang
+			};
+			const url = `${l.protocol}//${l.host}${l.pathname}?lang=${lang}`;
+			window.history.pushState(state, window.title, url);
+			this.showLang(lang);
 		}
 	}
 

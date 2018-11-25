@@ -50,7 +50,7 @@
 
 		buildPage() {
 			const page = document.createElement('div');
-			page.className = 'din-a4';
+			page.className = 'din-a4 page-breaker';
 			this.body.appendChild(page);
 			return page;
 		}
