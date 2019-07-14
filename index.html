@@ -17,8 +17,46 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css">
 
+	<script type="text/javascript">
+		const LANGS = ['en', 'es'];
+		const SHORT_MONTHS = {
+			en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dic'],
+			es: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+		};
+		const M_I18N = {
+			en: {
+				years_short: 'y',
+				months_short: 'm',
+				TODAY: 'Today'
+			},
+			es: {
+				years_short: 'a',
+				months_short: 'm',
+				TODAY: 'Hoy'
+			}
+		}
+
+		const onReady = (cbk) => {
+			let h = false;
+			const protCbk = () => {
+				if(!h) {
+					h = true;
+					cbk();
+				}
+			}
+			const checkReadyState = () => {
+				if(document.readyState === 'interactive' || document.readyState === 'complete') {
+					protCbk();
+				}
+			}
+			document.addEventListener('readystatechange', protCbk);
+			document.addEventListener('DOMContentLoaded', protCbk);
+			checkReadyState();
+		}
+	</script>
 	<script src="js/lang.js" type="text/javascript"></script>
 	<script src="js/pages.js" type="text/javascript"></script>
+	<script src="js/date-range.js" type="text/javascript"></script>
 </head>
 <body>
 	<section class="vcard">
@@ -196,23 +234,59 @@
 		<h1 lang="es">Historial</h1>
 		<ul class="no-bullets">
 			<li>
-				<span class="date-range" lang="en">Oct 2013 - Today</span>
-				<span class="date-range" lang="es">Oct 2013 - Hoy</span>
-				Comet Global Consulting / Merkle Inc <span lang="en">(SP)</span><span lang="es">(ES)</span>
+				<i class="flag-icon flag-icon-es"></i>
+				<span class="date-range" data-date-start="2019-02-25" data-date-end="TODAY">Mar 2019 - Today</span>
+				<span lang="en">Axa Holding (Hired by K-Lagan Consulting) (SP)</span>
+				<span lang="es">Axa Holding (contratado por K-Lagan Consulting) (ES)</span>
+				<span class="position">Tech-Lead</span>
 			</li>
-			<li><span class="date-range">Mar 2011 - May 2013</span> Lavinia Interactiva <span lang="en">(SP)</span><span lang="es">(ES)</span></li>
-			<li><span class="date-range">Oct 2008 - Feb 2011</span> El Sentido Sofware S.L. <span lang="en">(SP)</span><span lang="es">(ES)</span></li>
-			<li><span class="date-range">Apr 2008 - Jun 2008</span> Bassobroveli (ARG)</li>
-			<li><span class="date-range">Jun 2006 - Apr 2008</span> 451&deg; (ARG)</li>
-			<li><span class="date-range">Mar 2006 - Jun 2006</span> HandsSolutions (ARG)</li>
+			<li>
+				<i class="flag-icon flag-icon-es"></i>
+				<span class="date-range" data-date-start="2013-10-13" data-date-end="2019-02-21">Oct 2013 - Feb 2019</span>
+				Comet Global Consulting / Merkle Inc
+				<span class="position">Dev-Lead</span>
+			</li>
+			<li>
+				<i class="flag-icon flag-icon-es"></i>
+				<span class="date-range" data-date-start="2011-03-01" data-date-end="2013-05-12">Mar 2011 - May 2013</span>
+				Lavinia Interactiva
+				<span class="position">Senior Developer</span>
+			</li>
+			<li>
+				<i class="flag-icon flag-icon-es"></i>
+				<span class="date-range" data-date-start="2008-10-01" data-date-end="2011-02-01">Oct 2008 - Feb 2011</span>
+				El Sentido Sofware S.L.
+				<span class="position">Senior Developer</span>
+			</li>
+			<li>
+				<i class="flag-icon flag-icon-ar"></i>
+				<span class="date-range" data-date-start="2008-04-01" data-date-end="2008-08-01">Apr 2008 - Jul 2008</span>
+				Bassobroveli
+				<span class="position">Semi Senior Developer</span>
+			</li>
+			<li>
+				<i class="flag-icon flag-icon-ar"></i>
+				<span class="date-range" data-date-start="2006-06-01" data-date-end="2008-04-01">Jun 2006 - Apr 2008</span>
+				451&deg;
+				<span class="position">Junior Developer/Semi Senior Developer</span>
+			</li>
+			<li>
+				<i class="flag-icon flag-icon-ar"></i>
+				<span class="date-range" data-date-start="2006-03-01" data-date-end="2006-06-01">Mar 2006 - Jun 2006</span>
+				HandsSolutions (ARG)
+				<span class="position">Junior Developer</span>
+			</li>
 		</ul>
 	</section>
 	<section>
 		<h1 lang="en">Significant Projects</h1>
 		<h1 lang="es">Projectos Destacados</h1>
 		<div class="main">
-			<h2 lang="en">Dev lead for British Sky Broadcasting Ltd (SKY) @ Merkle Inc <span class="date-range">(oct 2013 - Today)</span></h2>
-			<h2 lang="es">Dev lead para British Sky Broadcasting Ltd (SKY) @ Merkle Inc <span class="date-range">(oct 2013 - hoy)</span></h2>
+			<h2 lang="en">
+				<span lang="en">Dev lead for British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
+				<span lang="es">Dev lead para British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
+				<span class="date-range" data-date-start="2013-10-13" data-date-end="2019-02-21">Oct 2013 - Feb 2019</span>
+			</h2>
 			<p lang="en">
 				Dev Lead at a scrum team of 6 to 8 people, 2~3 QAs 2~4 Devs and 1 Scrum Master/Product Owner, but I started as a senior developer at Comet (now know as Merkle Inc).
 				I was hired to start a new team that would migrate an existing web, part of a CRM application, for Sky Uk.
@@ -242,8 +316,11 @@
 				<li>Y por supuesto Developer</li>
 			</ul>
 
-			<h3 lang="en">Several Online Front-End for Sky @ Merkle Inc <span class="date-range">(mar 2017 - today)</span></h3>
-			<h3 lang="es">Billing View, Sky CRM @ Merkle Inc <span class="date-range">(mar 2017 - today)</span></h3>
+			<h3 lang="en">
+				<span lang="en">Several Online Front-End for Sky @ Merkle Inc</span>
+				<span lang="es">Varios Front-Ends para Sky CRM @ Merkle Inc</span>
+				<span class="date-range" data-date-start="2017-03-01" data-date-end="2019-02-21">(Mar 2017 - Feb 2019)</span>
+			</h3>
 			<p lang="en">
 				Several project of short development, 3 - 4 month each, for them we've used React and Redux in combination with <a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
 				<a href="http://www.thucydides.info" target="_blank">Serenity</a> with <a href="https://cucumber.io/" target="_blank">Cucumber</a> was used for Acceptance Tests
@@ -255,9 +332,11 @@
 
 			<br/>
 
-			<h3 lang="en">Billing View, Sky CRM @ Merkle Inc <span class="date-range">(oct 2013 - mar 2017)</span></h3>
-			<h3 lang="es">Billing View, Sky CRM @ Merkle Inc <span class="date-range">(oct 2013 - hoy)</span></h3>
-
+			<h3>
+				<span lang="en">Billing View, Sky CRM @ Merkle Inc</span>
+				<span lang="es">Billing View, Sky CRM @ Merkle Inc</span>
+				<span class="date-range" data-date-start="2013-10-13" data-date-end="2017-03-01">(Oct 2013 - Mar 2017)</span>
+			</h3>
 			<p lang="en">
 				For it we use Durandal as SPA framework (imposed by customer) Jasmine for unit testing, Cucumber and Selenium for Acceptance Tests and Java 6 (then 7) and Spring 3.
 			</p>
@@ -273,7 +352,10 @@
 
 			<br/>
 
-			<h2>3 a la carta @ Lavinia Interactiva <span class="date-range">(mar 2011 - may 2013)</span></h2>
+			<h2>
+				3 a la carta @ Lavinia Interactiva<br/>
+				<span class="date-range" data-date-start="2011-03-01" data-date-end="2013-05-12">(Mar 2011 - May 2013)</span>
+			</h2>
 			<p lang="en">
 				Lavnina's way of working were one dev one project. So as (only) part of this project I was entrusted to rewrite the old Flash Version of 3 a la carta (TV3 Catalonian public Television) to the newest technologies of HTML5.
 			</p>

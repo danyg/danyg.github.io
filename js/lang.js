@@ -10,13 +10,14 @@
 
 	class Lang {
 		constructor() {
-			document.addEventListener(
-				'DOMContentLoaded',
-				this.onDomReady.bind(this)
-			);
+			onReady(this.onDomReady.bind(this));
 		}
 
 		onDomReady() {
+			this.start();
+		}
+
+		start() {
 			this.body = document.body;
 			this.showLangSelector();
 			this.readQS();
