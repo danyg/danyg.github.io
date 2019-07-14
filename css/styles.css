@@ -2,6 +2,7 @@
  * @author Daniel Goberitz <danyg>
  */
 body {
+	--line-height: 22px;
 	--vertical-padding: 4px;
 	--horizontal-padding: 6px;
 	--first-color: #fff;
@@ -19,7 +20,7 @@ body {
 body {
 	margin: 0%;
 	padding: 0%;
-	font: normal 14px/22px "Trebuchet MS", Sans-Serif;
+	font: normal 14px/var(--line-height) "Trebuchet MS", Sans-Serif;
 	color: var(--text-color);
 }
 
@@ -122,6 +123,13 @@ h1 {
 	font-weight: bold;
 }
 
+article {
+	padding: 0px 0px var(--line-height) 0px;
+}
+article:last-child {
+	padding: 0;
+}
+
 @media (max-width: 210mm) and (min-width: 600px) {
 	h1 {
 		font-size: 2.5vw;
@@ -151,8 +159,14 @@ h1 {
 }
 
 @media (max-width: 450px) {
+	.col.center-contents {
+		display: block;
+		clear: both;
+	}
 	section.vcard {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	section.vcard .col {
 		width: 30%;
@@ -160,7 +174,7 @@ h1 {
 		background: transparent;
 	}
 	section.vcard .main {
-		width: 67%;
+		width: 100%;
 	}
 	section {
 		padding-bottom: var(--horizontal-padding);

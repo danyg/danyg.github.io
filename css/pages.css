@@ -61,3 +61,17 @@ html {
 		margin: 10px auto;
 	}
 }
+@media (max-width: 209mm) {
+	body {
+		width: auto;
+		margin: 0px auto;
+	}
+	.din-a4 {
+		width: initial;
+		height: initial;
+	}
+	.din-a4 section {
+		flex-grow: initial;
+	}
+
+}
