@@ -41,12 +41,12 @@
 			}
 		}
 
-		const onReady = (cbk) => {
+		const onReady = (givenCbk) => {
 			let h = false;
 			const cbk = () => {
 				if (!h) {
 					h = true;
-					cbk();
+					givenCbk();
 				}
 			}
 			const checkReadyState = () => {
@@ -65,7 +65,7 @@
 </head>
 
 <body>
-	<section class="vcard">
+	<section class="layout-col vcard">
 		<div class="col center-contents">
 			<img src='./daniel.jpg' class="person" />
 		</div>
@@ -101,7 +101,7 @@
 			</p>
 		</div>
 	</section>
-	<section>
+	<section class="layout-col">
 		<h1 lang="en">About me</h1>
 		<p lang="en">
 			Self-Taught, passionate for coding, for create architectures that not only resolve the problem, but also are easy
@@ -118,7 +118,7 @@
 			Team player, siempre buscando la forma de mejorar las cosas a mi alrededor.
 		</p>
 	</section>
-	<section>
+	<section class="layout-col">
 		<h1 lang="en">Studies</h1>
 		<h1 lang="es">Estudios</h1>
 		<p lang="en">
@@ -132,7 +132,7 @@
 			Escuela Técnica No. 1 Otto Krause, Buenos Aires, Argentina
 		</p>
 	</section>
-	<section>
+	<section class="layout-col">
 		<h1 lang="en">Languages</h1>
 		<h1 lang="es">Idiomas</h1>
 		<p lang="en" class="-line-height-2">
@@ -146,7 +146,7 @@
 			<strong><i class="flag-icon flag-icon-es-ct"></i>Catalán</strong> Básico
 		</p>
 	</section>
-	<section>
+	<section class="layout-col">
 		<h1 lang="en">Knowledge</h1>
 		<h1 lang="es" class="little-header">Conocimientos</h1>
 		<p>
@@ -231,7 +231,7 @@
 			PHP
 		</p>
 	</section>
-	<section>
+	<section class="layout-col">
 		<h1>Hobbies</h1>
 		<p lang="en">
 			Making/Wood-craft, Electronics, Motorcycling, Video Games, Series, Movies
@@ -240,7 +240,7 @@
 			Bricolaje, Electrónica, Motociclismo, Video Juegos, Series, Películas
 		</p>
 	</section>
-	<section>
+	<section class="layout-col">
 		<h1 lang="en">Work History</h1>
 		<h1 lang="es">Historial</h1>
 		<ul class="no-bullets">
