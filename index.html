@@ -1,6 +1,7 @@
 <!-- @author Daniel Goberitz <danyg> -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,14 @@
 	<link rel="stylesheet" href="css/lang.css" type="text/css">
 	<link rel="stylesheet" href="css/pages.css" type="text/css">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+		integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css"
+		integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css"
+		integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+		integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css">
 
@@ -38,19 +43,19 @@
 
 		const onReady = (cbk) => {
 			let h = false;
-			const protCbk = () => {
-				if(!h) {
+			const cbk = () => {
+				if (!h) {
 					h = true;
 					cbk();
 				}
 			}
 			const checkReadyState = () => {
-				if(document.readyState === 'interactive' || document.readyState === 'complete') {
-					protCbk();
+				if (document.readyState === 'interactive' || document.readyState === 'complete') {
+					cbk();
 				}
 			}
-			document.addEventListener('readystatechange', protCbk);
-			document.addEventListener('DOMContentLoaded', protCbk);
+			document.addEventListener('readystatechange', cbk);
+			document.addEventListener('DOMContentLoaded', cbk);
 			checkReadyState();
 		}
 	</script>
@@ -58,10 +63,11 @@
 	<script src="js/pages.js" type="text/javascript"></script>
 	<script src="js/date-range.js" type="text/javascript"></script>
 </head>
+
 <body>
 	<section class="vcard">
 		<div class="col center-contents">
-			<img src='./daniel.jpg' class="person"/>
+			<img src='./daniel.jpg' class="person" />
 		</div>
 		<div class="main">
 			<h1>Daniel Goberitz</h1>
@@ -72,20 +78,22 @@
 			</p>
 			<p>
 				<strong lang="en"><i class="far fa-id-card"></i>Citizenship</strong>
-				<strong lang="es"><i class="far fa-id-card"></i>Ciudadan&iacute;a</strong>
-				<span lang="en">Italian, Argentinean</span>
+				<strong lang="es"><i class="far fa-id-card"></i>Ciudadanía</strong>
+				<span lang="en">Italian, Argentinian</span>
 				<span lang="es">Italiana, Argentina</span>
 			</p>
 			<p>
 				<strong lang="en"><i class="fas fa-home"></i>Residence</strong>
 				<strong lang="es"><i class="fas fa-home"></i>Residencia</strong>
 				<span lang="en">Barcelona, Barcelona, Spain</span>
-				<span lang="es">Barcelona, Barcelona, Espa&ntilde;a</span>
+				<span lang="es">Barcelona, Barcelona, España</span>
 			</p>
 			<p>
 				<strong><i class="fab fa-linkedin"></i>Linked In</strong>
-				<a lang="en" href="https://www.linkedin.com/in/daniel-goberitz/en" target="_blank">https://www.linkedin.com/in/daniel-goberitz/en</a>
-				<a lang="es" href="https://www.linkedin.com/in/daniel-goberitz/es" target="_blank">https://www.linkedin.com/in/daniel-goberitz/es</a>
+				<a lang="en" href="https://www.linkedin.com/in/daniel-goberitz/en"
+					target="_blank">https://www.linkedin.com/in/daniel-goberitz/en</a>
+				<a lang="es" href="https://www.linkedin.com/in/daniel-goberitz/es"
+					target="_blank">https://www.linkedin.com/in/daniel-goberitz/es</a>
 			</p>
 			<p>
 				<strong><i class="fab fa-github"></i>Github</strong>
@@ -96,15 +104,17 @@
 	<section>
 		<h1 lang="en">About me</h1>
 		<p lang="en">
-			Self-Taught, passionate for coding, for create architectures that not only resolve the problem, but also are easy to use for those will use it (the team).
-			<br/><br/>
+			Self-Taught, passionate for coding, for create architectures that not only resolve the problem, but also are easy
+			to use for those will use it (the team).
+			<br /><br />
 			Team player, always finding the way to improve things around me.
 		</p>
 
-		<h1 lang="es">Sobre m&iacute;</h1>
+		<h1 lang="es">Sobre mí</h1>
 		<p lang="es">
-			Autodidacta, apasionado por desarrollar, por crear arquitecturas que no solo resuelvan el problema, si no tambi&eacute;n que sean f&aacute;ciles de usar para aquellos que la usaran (el equipo)
-			<br/><br/>
+			Autodidacta, apasionado por desarrollar, por crear arquitecturas que no solo resuelvan el problema, si no
+			también que sean fáciles de usar para aquellos que la usaran (el equipo)
+			<br /><br />
 			Team player, siempre buscando la forma de mejorar las cosas a mi alrededor.
 		</p>
 	</section>
@@ -113,27 +123,27 @@
 		<h1 lang="es">Estudios</h1>
 		<p lang="en">
 			<strong><i class="fas fa-graduation-cap"></i>Degree</strong>
-			Electronic Technician with orientation in Telecommunications<br/>
+			Electronic Technician with orientation in Telecommunications<br />
 			Technical School No. 1 Otto Krause, Buenos Aires, Argentina
 		</p>
 		<p lang="es">
 			<strong><i class="fas fa-graduation-cap"></i>Titulo</strong>
-			T&eacute;cnico Electr&oacute;nico con orientaci&oacute;n en Telecomunicaciones<br/>
-			Escuela T&eacute;cnica No. 1 Otto Krause, Buenos Aires, Argentina
+			Técnico Electrónico con orientación en Telecomunicaciones<br />
+			Escuela Técnica No. 1 Otto Krause, Buenos Aires, Argentina
 		</p>
 	</section>
 	<section>
 		<h1 lang="en">Languages</h1>
 		<h1 lang="es">Idiomas</h1>
 		<p lang="en" class="-line-height-2">
-			<strong><i class="flag-icon flag-icon-es"></i>Spanish</strong> Mother tongue<br/>
-			<strong><i class="flag-icon flag-icon-gb"></i>English</strong> Fluent<br/>
+			<strong><i class="flag-icon flag-icon-es"></i>Spanish</strong> Mother tongue<br />
+			<strong><i class="flag-icon flag-icon-gb"></i>English</strong> Fluent<br />
 			<strong><i class="flag-icon flag-icon-es-ct"></i>Catalan</strong> Basic
 		</p>
 		<p lang="es" class="-line-height-2">
-			<strong><i class="flag-icon flag-icon-es"></i>Espa&ntilde;ol</strong> Lengua materna<br/>
-			<strong><i class="flag-icon flag-icon-gb"></i>Ingl&eacute;s</strong> Fluido<br/>
-			<strong><i class="flag-icon flag-icon-es-ct"></i>Catal&aacute;n</strong> B&aacute;sico
+			<strong><i class="flag-icon flag-icon-es"></i>Español</strong> Lengua materna<br />
+			<strong><i class="flag-icon flag-icon-gb"></i>Inglés</strong> Fluido<br />
+			<strong><i class="flag-icon flag-icon-es-ct"></i>Catalán</strong> Básico
 		</p>
 	</section>
 	<section>
@@ -141,92 +151,93 @@
 		<h1 lang="es" class="little-header">Conocimientos</h1>
 		<p>
 			<strong>Javascript</strong>
-				<q lang="en">12 years of experience, still lot to learn. Learning and excited about ES6.</q>
-				<q lang="es">12 a&ntilde;os de experiencia, toadav&iacute;a mucho que aprender. Aprendiendo ES6 y muy emocionado.</q>
-			<br/>
+			<q lang="en">12 years of experience, still lot to learn. Learning and excited about ES6.</q>
+			<q lang="es">12 años de experiencia, todavía mucho que aprender. Aprendiendo ES6 y muy
+				emocionado.</q>
+			<br />
 			<strong>Typescript</strong>
-				<q lang="en">Learning it, and start to loving it.</q>
-				<q lang="es">Aprendi&eacute;ndolo y empezando a encantarme.</q>
-			<br/>
+			<q lang="en">Learning it, and start to loving it.</q>
+			<q lang="es">Aprendiéndolo y empezando a encantarme.</q>
+			<br />
 			<strong>React, Redux & Jest + Enzyme</strong>
-				<q lang="en">2+ years of experience as classes and functional way.</q>
-				<q lang="es">2+ a&ntilde;os de experiencia, como clases y de forma funcional.</q>
-			<br/>
+			<q lang="en">2+ years of experience as classes and functional way.</q>
+			<q lang="es">2+ años de experiencia, como clases y de forma funcional.</q>
+			<br />
 			<strong>Jasmine</strong>
-				<q lang="en">5 years of experience using it and extending it.</q>
-				<q lang="es">5 a&ntilde;os de experiencia us&aacute;ndolo y extendi&eacute;ndolo.</q>
-			<br/>
+			<q lang="en">5 years of experience using it and extending it.</q>
+			<q lang="es">5 años de experiencia usándolo y extendiéndolo.</q>
+			<br />
 			<strong>Node.js</strong>
-				<q lang="en">Very familiar with. Knowledge on express, socket.io, mongodb-driver and more.</q>
-				<q lang="es">Muy familiarizado. Con conocimientos en express, socket.io, mongodb-driver y mas.</q>
-			<br/>
+			<q lang="en">Very familiar with. Knowledge on express, socket.io, mongodb-driver and more.</q>
+			<q lang="es">Muy familiarizado. Con conocimientos en express, socket.io, mongodb-driver y mas.</q>
+			<br />
 			<strong>JS Unit-Test</strong>
-				<q lang="en">5 years of experience.</q>
-				<q lang="es">5 a&ntilde;os de experiencia.</q>
-				<br/>
-				<strong>JS TDD</strong>
-				<q lang="en">3+ years of experience.</q>
-				<q lang="es">3+ a&ntilde;os de experiencia.</q>
-				<br/>
-				<strong>Java Unit-Test (Mockito/Junit)</strong>
-				<q lang="en">Experienced.</q>
-				<q lang="es">Con experiencia.</q>
-				<br/>
-				<strong>Java 7 with Spring 3</strong>
-				<q lang="en">Equivalent to 2 years of experience.</q>
-				<q lang="es">Equivalente a 2 a&ntilde;os de experiencia.</q>
-				<br/>
-				<strong>Maven</strong>
-				<q lang="en">7 years of struggle.</q>
-				<q lang="es">7 a&ntilde;os de lucha.</q>
-				<br/>
-				<strong>Maven Plugin Development</strong>
-				<q lang="en">I made a few (like 4) of them</q>
-				<q lang="es">He hecho unos cuantos, (como 4).</q>
-			<br/>
+			<q lang="en">5 years of experience.</q>
+			<q lang="es">5 años de experiencia.</q>
+			<br />
+			<strong>JS TDD</strong>
+			<q lang="en">3+ years of experience.</q>
+			<q lang="es">3+ años de experiencia.</q>
+			<br />
+			<strong>Java Unit-Test (Mockito/Junit)</strong>
+			<q lang="en">Experienced.</q>
+			<q lang="es">Con experiencia.</q>
+			<br />
+			<strong>Java 7 with Spring 3</strong>
+			<q lang="en">Equivalent to 2 years of experience.</q>
+			<q lang="es">Equivalente a 2 años de experiencia.</q>
+			<br />
+			<strong>Maven</strong>
+			<q lang="en">7 years of struggle.</q>
+			<q lang="es">7 años de lucha.</q>
+			<br />
+			<strong>Maven Plugin Development</strong>
+			<q lang="en">I made a few (like 4) of them</q>
+			<q lang="es">He hecho unos cuantos, (como 4).</q>
+			<br />
 			<strong>CSS</strong>
-				<q lang="en">2nd tongue.</q>
-				<q lang="es">2da lengua.</q>
-			<br/>
+			<q lang="en">2nd tongue.</q>
+			<q lang="es">2da lengua.</q>
+			<br />
 			<strong>Docker, Linux & Bash scripts</strong>
-				<q lang="en">User and basic sysadmin level.</q>
-				<q lang="es">Usuario y sysadmin B&aacute;sico.</q>
-			<br/>
+			<q lang="en">User and basic sysadmin level.</q>
+			<q lang="es">Usuario y sysadmin Básico.</q>
+			<br />
 			<strong>Selenium &amp; Cucumber</strong>
-				<q lang="en">5 years dealing with them. Also I've used in JVM and JS forms.</q>
-				<q lang="es">5 a&ntilde;os con ellos. Lo he usado en sus formas JVM y JS.</q>
-			<br/>
-			<strong lang="es">Tambi&eacute;n</strong>
+			<q lang="en">5 years dealing with them. Also I've used in JVM and JS forms.</q>
+			<q lang="es">5 años con ellos. Lo he usado en sus formas JVM y JS.</q>
+			<br />
+			<strong lang="es">También</strong>
 			<strong lang="en">Also</strong>
-				C,
-				C#,
-				<span lang="en">Assembly x86</span>
-				<span lang="es">Ensamblador x86</span>,
-				Photoshop,
-				jQuery,
-				<span lang="en">jQuery Plugins development</span>
-				<span lang="es">Desarrollo de Plugins para jQuery</span>,
-				<span lang="en">SQL for MySql</span>
-				<span lang="es">SQL para MySql</span>,
-				MongoDB,
-				IntelliJ,
-				VSCode,
-				Sublime,
-				VMWare Workstation,
-				Oracle VirtualBox,
-				Unraid,
-				Windows,
-				MacOSX,
-				PHP
+			C,
+			C#,
+			<span lang="en">Assembly x86</span>
+			<span lang="es">Ensamblador x86</span>,
+			Photoshop,
+			jQuery,
+			<span lang="en">jQuery Plugins development</span>
+			<span lang="es">Desarrollo de Plugins para jQuery</span>,
+			<span lang="en">SQL for MySql</span>
+			<span lang="es">SQL para MySql</span>,
+			MongoDB,
+			IntelliJ,
+			VSCode,
+			Sublime,
+			VMWare Workstation,
+			Oracle VirtualBox,
+			Unraid,
+			Windows,
+			MacOSX,
+			PHP
 		</p>
 	</section>
 	<section>
 		<h1>Hobbies</h1>
 		<p lang="en">
-			Woodcraft, Electronics, Motorcycling, Tennis, Paddle, Play Video Games, Series, Movies
+			Making/Wood-craft, Electronics, Motorcycling, Video Games, Series, Movies
 		</p>
 		<p lang="es">
-			Bricolage, Electr&oacute;nica, Motociclismo, Tenis, Paddle, Jugar Video Juegos, Series, Pel&iacute;culas
+			Bricolaje, Electrónica, Motociclismo, Video Juegos, Series, Películas
 		</p>
 	</section>
 	<section>
@@ -235,7 +246,7 @@
 		<ul class="no-bullets">
 			<li>
 				<i class="flag-icon flag-icon-es"></i>
-				<span class="date-range" data-date-start="2019-02-25" data-date-end="TODAY">Mar 2019 - Today</span>
+				<span class="date-range" data-date-start="2019-02-25" data-date-end="2019-10-11">Mar 2019 - Oct 2019</span>
 				<span lang="en">Axa Holding (Hired by K-Lagan Consulting) (SP)</span>
 				<span lang="es">Axa Holding (contratado por K-Lagan Consulting) (ES)</span>
 				<span class="position">Tech-Lead</span>
@@ -255,7 +266,7 @@
 			<li>
 				<i class="flag-icon flag-icon-es"></i>
 				<span class="date-range" data-date-start="2008-10-01" data-date-end="2011-02-01">Oct 2008 - Feb 2011</span>
-				El Sentido Sofware S.L.
+				El Sentido Software S.L.
 				<span class="position">Senior Developer</span>
 			</li>
 			<li>
@@ -280,8 +291,30 @@
 	</section>
 	<section>
 		<h1 lang="en">Significant Projects</h1>
-		<h1 lang="es">Projectos Destacados</h1>
+		<h1 lang="es">Proyectos Destacados</h1>
 		<div class="main">
+			<article>
+				<h2>
+					<span lang="en">Tech-Lead for Axa Holding @ K-Lagan</span>
+					<span lang="es">Tech-Lead Para Axa Holding @ K-Lagan</span>
+					<span class="date-range" data-date-start="2019-02-25" data-date-end="2019-10-11">Feb 2019 - Oct 2019</span>
+				</h2>
+				<p lang="en">
+					Tech Lead at a scrum team of 8 devs. As part of the time working at Axa I helped the team to learn about TDD,
+					Port and Adapters Pattern (Hexagonal architecture), Typescript and Automatic acceptance tests.
+					My role required to be a Man-In-The-Middle between the Software Architecture Dept. and the team, creating
+					Transitional Architectures to be deliver in a CD way. Also several bureaucratic jobs required by the
+					structure.
+				</p>
+				<p lang="es">
+					Tech Lead en un equipo scrum de 8 devs. En el tiempo trabajando en Axa ayude al equipo a aprender sobre TDD,
+					el Patron de Puertos y Adaptadores (Arquitectura Hexagonal), Typescript y Test de Aceptación
+					Automáticos.
+					Mi rol requería ser un Man-In-The-Middle entre el departamento de arquitectura y el equipo, creando
+					arquitecturas de transición para ser entregadas en Modo de Entrega Continua. También varios trabajos
+					burocráticos requeridos por la estructura.
+				</p>
+			</article>
 			<article>
 				<h2>
 					<span lang="en">Dev lead for British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
@@ -289,18 +322,21 @@
 					<span class="date-range" data-date-start="2013-10-13" data-date-end="2019-02-21">Oct 2013 - Feb 2019</span>
 				</h2>
 				<p lang="en">
-					Dev Lead at a scrum team of 6 to 8 people, 2~3 QAs 2~4 Devs and 1 Scrum Master/Product Owner, but I started as a senior developer at Comet (now know as Merkle Inc).
+					Dev Lead at a scrum team of 6 to 8 people, 2~3 QAs 2~4 Devs and 1 Scrum Master/Product Owner, but I started as
+					a senior developer at Comet (now know as Merkle Inc).
 					I was hired to start a new team that would migrate an existing web, part of a CRM application, for Sky Uk.
 				</p>
 				<p lang="es">
-					Dev Lead en un equipo scrum de 6 a 8 personas, 2~3 QAs 2~4 Devs y 1 Scrum Master/Product Owner, pero comenze como senior developer en Comet (ahora Merkle Inc).
-					Fui contratado para comenzar un nuevo equipo que migraria una web existente, parte de un aplicaci&oacute;n de CRM para Sky Uk.
+					Dev Lead en un equipo scrum de 6 a 8 personas, 2~3 QAs 2~4 Devs y 1 Scrum Master/Product Owner, pero comencé
+					como senior developer en Comet (ahora Merkle Inc).
+					Fui contratado para comenzar un nuevo equipo que migraría una web existente, parte de un aplicación de
+					CRM para Sky Uk.
 				</p>
 				<p lang="en">
-					As Dev Lead my responsibilities are:
+					As Dev Lead my responsibilities were:
 				</p>
 				<p lang="es">
-					Como Dev Lead ms responsablidades son:
+					Como Dev Lead mis responsabilidades eran:
 				</p>
 				<ul lang="en">
 					<li>Mentoring devs and QAs</li>
@@ -312,7 +348,7 @@
 				<ul lang="es">
 					<li>Mentor para devs y QAs</li>
 					<li>Arquitecto de Software</li>
-					<li>Punto de contacto t&eacute;cnico para otros equipos dentro de Sky</li>
+					<li>Punto de contacto técnico para otros equipos dentro de Sky</li>
 					<li>Backup de Scrum Master/Product Owner</li>
 					<li>Y por supuesto Developer</li>
 				</ul>
@@ -323,15 +359,19 @@
 					<span class="date-range" data-date-start="2017-03-01" data-date-end="2019-02-21">(Mar 2017 - Feb 2019)</span>
 				</h3>
 				<p lang="en">
-					Several project of short development, 3 - 4 month each, for them we've used React and Redux in combination with <a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
-					<a href="http://www.thucydides.info" target="_blank">Serenity</a> with <a href="https://cucumber.io/" target="_blank">Cucumber</a> was used for Acceptance Tests
+					Several project of short development, 3 - 4 month each, for them we've used React and Redux in combination
+					with <a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
+					<a href="http://www.thucydides.info" target="_blank">Serenity</a> with <a href="https://cucumber.io/"
+						target="_blank">Cucumber</a> was used for Acceptance Tests
 				</p>
 				<p lang="es">
-					Varios projectos de desarollo rapido, 3 - 4 meses cada uno, en ellos emos usado React y Redux en combinaci&oacute;n con <a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
-					Para los Test de aceptaci&oacute;n se utilizado <a href="http://www.thucydides.info" target="_blank">Serenity</a> con <a href="https://cucumber.io/" target="_blank">Cucumber</a>
+					Varios proyectos de desarrollo rápido, 3 - 4 meses cada uno, en ellos hemos usado React y Redux en
+					combinación con <a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
+					Para los Test de aceptación se utilizado <a href="http://www.thucydides.info" target="_blank">Serenity</a> con
+					<a href="https://cucumber.io/" target="_blank">Cucumber</a>
 				</p>
 
-				<br/>
+				<br />
 
 				<h3>
 					<span lang="en">Billing View, Sky CRM @ Merkle Inc</span>
@@ -339,44 +379,66 @@
 					<span class="date-range" data-date-start="2013-10-13" data-date-end="2017-03-01">(Oct 2013 - Mar 2017)</span>
 				</h3>
 				<p lang="en">
-					For it we use Durandal as SPA framework (imposed by customer) Jasmine for unit testing, Cucumber and Selenium for Acceptance Tests and Java 6 (then 7) and Spring 3.
+					For it we use Durandal as SPA framework (imposed by customer) Jasmine for unit testing, Cucumber and Selenium
+					for Acceptance Tests and Java 6 (then 7) and Spring 3.
 				</p>
 				<p lang="es">
-					Para el projecto usamos Durandal como framework SPA (impuesto por el cliente), Jasmine para los test unitarios, Cucumber y Selenium para los test de aceptaci&oacute;n, Java 6 (luego 7) y Spring 3.
+					Para el proyecto usamos Durandal como framework SPA (impuesto por el cliente), Jasmine para los test
+					unitarios, Cucumber y Selenium para los test de aceptación, Java 6 (luego 7) y Spring 3.
 				</p>
 				<p lang="es">
-					Como parte de este proyecto, he tenido que crear algunos plugins de maven, para poder desplegar la web e inyectar mecanismos de mocking de sistemas externos para los tests de aceptaci&oacute;n. tambi&eacute;n he creado un plugin para jasmine que permite renderizar y acceder a Widgets y modulos de durandal, para su unit testing  (<a href="https://github.com/danyg/jasmine-durandal" target="_blank">jasmine-durandal</a>).
+					Como parte de este proyecto, he tenido que crear algunos plugins de maven, para poder desplegar la web e
+					inyectar mecanismos de mocking de sistemas externos para los tests de aceptación. también he
+					creado un plugin para jasmine que permite renderizar y acceder a Widgets y módulos de durandal, para su unit
+					testing (<a href="https://github.com/danyg/jasmine-durandal" target="_blank">jasmine-durandal</a>).
 				</p>
 				<p lang="en">
-					As part of this project I've created some maven plugins, to be able to deploy the web and inject mocking mechanisms for 3rd party systems for acceptance tests. Also created a TestBed to be able to render and access Durandal Modules and widgets (components) in Jasmine tests (<a href="https://github.com/danyg/jasmine-durandal" target="_blank">jasmine-durandal</a>).
+					As part of this project I've created some maven plugins, to be able to deploy the web and inject mocking
+					mechanisms for 3rd party systems for acceptance tests. Also created a TestBed to be able to render and access
+					Durandal Modules and widgets (components) in Jasmine tests (<a
+						href="https://github.com/danyg/jasmine-durandal" target="_blank">jasmine-durandal</a>).
 				</p>
 
 			</article>
 
 			<article>
 				<h2>
-					3 a la carta @ Lavinia Interactiva<br/>
+					3 a la carta @ Lavinia Interactiva<br />
 					<span class="date-range" data-date-start="2011-03-01" data-date-end="2013-05-12">(Mar 2011 - May 2013)</span>
 				</h2>
 				<p lang="en">
-					Lavnina's way of working were one dev one project. So as (only) part of this project I was entrusted to rewrite the old Flash Version of 3 a la carta (TV3 Catalonian public Television) to the newest technologies of HTML5.
+					Lavnina's way of working were one dev one project. So as (only) part of this project I was entrusted to
+					rewrite the old Flash Version of 3 a la carta (TV3 Catalonian public Television) to the newest technologies of
+					HTML5.
 				</p>
 				<p lang="es">
-					La forma de trabajar en lavinia en ese momento era un proyecto un developer. Asi que como (unica) parte de este projecto me fue encomendado reescribir la vieja versi&oacute;n en flash de 3 a la carta (TV 3 Televisi&oacute;n p&uacute;blica catalana) a las nuevas tecnologias de HTML5.
+					La forma de trabajar en lavinia en ese momento era un proyecto un developer. Asi que como (unica) parte de
+					este proyecto me fue encomendado reescribir la vieja versión en flash de 3 a la carta (TV 3
+					Televisión pública catalana) a las nuevas tecnologías de HTML5.
 				</p>
 				<p lang="en">
-					Also this project needed to be integrated with Java projects, so the customer (TV3) ask us to deliver our part as a maven artifact, and properly tested with unit test. Neither to say that this was a big challenge and one that I very proud of as I successfully achieved.
+					Also this project needed to be integrated with Java projects, so the customer (TV3) ask us to deliver our part
+					as a maven artifact, and properly tested with unit test. Neither to say that this was a big challenge and one
+					that I very proud of as I successfully achieved.
 				</p>
 				<p lang="es">
-					Tambi&eacute;n para este proyecto se requiri&oacute; que sea integrado con otros proyectos Java, por ello el cliente nos pidi&oacute; que se entregara como un artefacto de maven, y propiamente testeado con test unitarios. No hace falta decir que fue un gran desaf&iacute;o para mi del cual me siento muy orgulloso.
+					También para este proyecto se requirió que sea integrado con otros proyectos Java, por ello el
+					cliente nos pidió que se entregara como un artefacto de maven, y propiamente testeado con test
+					unitarios. No hace falta decir que fue un gran desafío para mi del cual me siento muy orgulloso.
 				</p>
 				<p lang="en">
-					The project was an SPA with a fullbrowser video with menus over it (like a desktop video player) where the user was able to select several live signals of TV3 (TV3, 324, 33, Super, etc...) and also browse for the on demand videos.<br/>
+					The project was an SPA with a full-browser video with menus over it (like a desktop video player) where the
+					user was able to select several live signals of TV3 (TV3, 324, 33, Super, etc...) and also browse for the on
+					demand videos.<br />
 					The application was feed by xml generated by a java backend, and the video feeds where also given by TV3.
 				</p>
 				<p lang="es">
-					El proyecto era una SPA con un v&iacute;deo llenando todo el navegador, con menues sobre &eacute;l (como un reproductor de v&iacute;deo de escritorio), donde el usuario era capaz de seleccionar una de las se&ntilde;ales en vivo de TV3 (TV3, 324, 33, Super, etc...) y tambi&eacute;n navegar por los v&iacute;deos on demand ofrecidos.<br/>
-					La aplicaci&oacute;n era prove&iacute;da por xml generados un backend java, y las se&ntilde;ales de video y los videos eran prove&iacute;dos por el cliente.
+					El proyecto era una SPA con un vídeo llenando todo el navegador, con menus sobre él (como un
+					reproductor de vídeo de escritorio), donde el usuario era capaz de seleccionar una de las
+					señales en vivo de TV3 (TV3, 324, 33, Super, etc...) y también navegar por los vídeos on
+					demand ofrecidos.<br />
+					La aplicación era proveída por xml generados un backend java, y las señales de video y
+					los videos eran proveídos por el cliente.
 				</p>
 			</article>
 		</div>
@@ -384,4 +446,5 @@
 
 
 </body>
+
 </html>
