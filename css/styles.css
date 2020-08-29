@@ -200,3 +200,16 @@ article:last-child {
     padding: var(--vertical-padding) var(--horizontal-padding);
   }
 }
+
+.pill {
+  display: inline-block;
+  border-radius: 8px;
+  background: #ccc;
+  padding: 2px 6px;
+  margin: 2px 2px 0px 0px;
+  line-height: 0.9em;
+  cursor: default;
+}
+.pill:hover {
+  background: skyblue;
+}
