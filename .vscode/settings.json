@@ -35,30 +35,42 @@
     "yml"
   ],
   "cSpell.words": [
-		"Aurelia",
-		"Autodidacta",
-		"Bassobroveli",
-		"Ciudadan",
-		"Durandal",
-		"Espa",
-		"Fecha",
-		"Intelli",
-		"Lagan",
-		"Lavinia",
-		"Lavnina's",
-		"Merkle",
-		"Residencia",
-		"Sobre",
-		"Toolkit",
-		"Unraid",
-		"apasionado",
-		"crear",
-		"desarrollar",
-		"devs",
-		"linkedin",
-		"nacimiento",
-		"renderizar",
-		"vcard"
-	],
-  "cSpell.language": "en-GB,es,es-ES"
+    "Aurelia",
+    "Autodidacta",
+    "Bassobroveli",
+    "Ciudadan",
+    "Durandal",
+    "Espa",
+    "Fecha",
+    "Intelli",
+    "Lagan",
+    "Lavinia",
+    "Lavnina's",
+    "Merkle",
+    "Residencia",
+    "Sobre",
+    "Toolkit",
+    "Unraid",
+    "apasionado",
+    "crear",
+    "desarrollar",
+    "devs",
+    "linkedin",
+    "nacimiento",
+    "renderizar",
+    "vcard"
+  ],
+  "cSpell.language": "en-GB,es,es-ES",
+  "grammarly.files.include": [
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt",
+    "**/*.html"
+  ],
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file"
+    }
+  ]
 }
