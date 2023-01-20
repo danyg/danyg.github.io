@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Colorimetry chart reference</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      background: #000;
+
+      grid-template-rows:
+        [row1-start] "color color color color color color"[row1-end] [row2-start] "color color color color color color"[row2-end];
+    }
+
+    @media screen and (orientation:portrait) {
+      html {
+        transform: rotate(90deg);
+      }
+
+      body {
+        width: 100vh;
+        height: 100vw;
+
+        grid-template-columns: calc(100vh/6) calc(100vh/6) calc(100vh/6) calc(100vh/6) calc(100vh/6) calc(100vh/6);
+      }
+
+      .color {
+        height: 50vw;
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+
+      body {
+        grid-template-columns: calc(100vw/6) calc(100vw/6) calc(100vw/6) calc(100vw/6) calc(100vw/6) calc(100vw/6);
+      }
+
+      .color {
+        height: 50vh;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="color" style="background-color: #ff0000;"></div>
+  <div class="color" style="background-color: #00ff00;"></div>
+  <div class="color" style="background-color: #0000ff;"></div>
+  <div class="color" style="background-color: #800000;"></div>
+  <div class="color" style="background-color: #008000;"></div>
+  <div class="color" style="background-color: #000080;"></div>
+
+  <div class="color" style="background-color: #ffff00;"></div>
+  <div class="color" style="background-color: #00ffff;"></div>
+  <div class="color" style="background-color: #ff00ff;"></div>
+  <div class="color" style="background-color: #808000;"></div>
+  <div class="color" style="background-color: #008080;"></div>
+  <div class="color" style="background-color: #800080;"></div>
+
+
+</body>
+
+</html>
