@@ -1,135 +1,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clock</title>
-    <style type="text/css">
-        @font-face {
-            font-family: 'Dots1';
-            src: url('./assets/advanced-dot-digital-7.regular.ttf') format('truetype');
-        }
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Clock</title>
+	<style type="text/css">
+		@font-face {
+			font-family: 'Dots1';
+			src: url('./assets/advanced-dot-digital-7.regular.ttf') format('truetype');
+		}
 
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
 
-        body {
-            font-family: Dots1;
-            font-weight: lighter;
-            background: #111;
-            color: skyblue;
-        }
+		body {
+			font-family: Dots1;
+			font-weight: lighter;
+			background: #111;
+			color: skyblue;
+		}
 
-        html,
-        body,
-        #root,
-        .clock {
-            width: 100%;
-            height: 100%;
-        }
+		html,
+		body,
+		#root,
+		.clock {
+			width: 100%;
+			height: 100%;
+		}
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            padding: 0;
-            margin: 0;
-            line-height: 120%;
-        }
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			padding: 0;
+			margin: 0;
+			line-height: 120%;
+		}
 
-        .clock {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            text-shadow: 1vh 1vh 2px #080808;
-            gap: 12vh;
-        }
+		.clock {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			text-shadow: 1vh 1vh 2px #080808;
+			gap: 12vh;
+		}
 
-        .clock h1,
-        h2 {
-            text-align: center;
-        }
+		.clock h1,
+		h2 {
+			text-align: center;
+		}
 
-        .clock h1 {
-            font-size: 34vh;
-        }
+		.clock h1 {
+			font-size: 34vh;
+		}
 
-        .clock h2 {
-            font-size: 6vh;
-        }
-    </style>
+		.clock h2 {
+			font-size: 6vh;
+		}
+	</style>
 </head>
 
-<body>
-    <div id="root"></div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.js"></script>
+<body onclick="document.fullscreen ? document.exitFullscreen() : document.documentElement.requestFullscreen()">
+	<div id="root"></div>
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.js"></script>
 
-    <script type="text/babel">
-        // Define a component called Greetings
-        const today = () => new Date()
-        const getTime = (date) => date.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-        const getDate = (date) => date.toLocaleDateString('en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' })
+	<script type="text/babel">
+		const today = () => new Date()
+		const getTime = (date) => date.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+		const getDate = (date) => date.toLocaleDateString('en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' })
 
-        const { useState, useEffect, useRef } = React;
+		const { useState, useEffect, useRef } = React;
 
-        function useInterval(callback, delay) {
-            const savedCallback = useRef();
+		function useInterval(callback, delay) {
+			const savedCallback = useRef();
 
-            // Remember the latest callback.
-            useEffect(() => {
-                savedCallback.current = callback;
-            }, [callback]);
+			// Remember the latest callback.
+			useEffect(() => {
+				savedCallback.current = callback;
+			}, [callback]);
 
-            // Set up the interval.
-            useEffect(() => {
-                let id = setInterval(() => {
-                    savedCallback.current();
-                }, delay);
-                return () => clearInterval(id);
-            }, [delay]);
-        }
-        const getSep = (n) => {
-            switch (n % 4) {
-                case 0:
-                case 1: return '·';
-                case 2:
-                case 3: return ':';
-            }
-        }
+			// Set up the interval.
+			useEffect(() => {
+				let id = setInterval(() => {
+					savedCallback.current();
+				}, delay);
+				return () => clearInterval(id);
+			}, [delay]);
+		}
+		const getSep = (n) => {
+			switch (n % 4) {
+				case 0:
+				case 1: return '·';
+				case 2:
+				case 3: return ':';
+			}
+		}
 
-        const Clock = () => {
-            const day = today();
-            const [counter, setCounter] = useState(0);
-            const [time, setTime] = useState(getTime(day));
-            const [date, setDate] = useState(getDate(day));
+		const Clock = () => {
+			const day = today();
+			const [counter, setCounter] = useState(0);
+			const [time, setTime] = useState(getTime(day));
+			const [date, setDate] = useState(getDate(day));
 
-            useInterval(() => {
-                console.log(counter)
-                setCounter(counter + 1);
-                const day = today();
-                setTime(getTime(day).replace(':', getSep(counter)));
-                setDate(getDate(day));
-            }, 1000);
-            return <div class="clock">
-                <h1>{time}</h1>
-                <h2>{date}</h2>
-            </div>;
-        }
+			useInterval(() => {
+				setCounter(counter + 1);
+				const day = today();
+				setTime(getTime(day).replace(':', getSep(counter)));
+				setDate(getDate(day));
+			}, 1000);
+			return <div className="clock">
+				<h1>{time}</h1>
+				<h2>{date}</h2>
+			</div>;
+		}
 
-        // Render the component to the DOM
-        ReactDOM.render(
-            <Clock />,
-            document.getElementById("root")
-        );
-    </script>
+		// Render the component to the DOM
+		ReactDOM.render(
+			<Clock />,
+			document.getElementById("root")
+		);
+	</script>
 
 </body>
 
