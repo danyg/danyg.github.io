@@ -32,7 +32,10 @@
       pages
         .map((page) => Array.from(page.children))
         .flat()
-        .forEach((elm) => document.body.appendChild(elm));
+        .reverse()
+        .forEach((elm) => document.body.prepend(elm));
+
+      document.body.classList.remove("with-pages");
 
       pages.forEach((p) => p.parentElement.removeChild(p));
     }
