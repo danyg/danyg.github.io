@@ -1,437 +1,481 @@
 <!-- @author Daniel Goberitz <danyg> -->
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>CV: Daniel Goberitz</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+		<link rel="stylesheet" href="css/lang.css" type="text/css" />
+		<link rel="stylesheet" href="css/pages.css" type="text/css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CV: Daniel Goberitz</title>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <link rel="stylesheet" href="css/lang.css" type="text/css">
-  <link rel="stylesheet" href="css/pages.css" type="text/css">
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+			integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css"
+			integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css"
+			integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+			integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+			crossorigin="anonymous"
+		/>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
-    integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css"
-    integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css"
-    integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
-    integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css">
+		<script type="text/javascript">
+			const LANGS = ["en", "es"];
+			const SHORT_MONTHS = {
+				en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dic"],
+				es: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+			};
+			const M_I18N = {
+				en: {
+					years_short: "y",
+					months_short: "m",
+					TODAY: "Today",
+				},
+				es: {
+					years_short: "a",
+					months_short: "m",
+					TODAY: "Hoy",
+				},
+			};
 
-  <script type="text/javascript">
-    const LANGS = ['en', 'es'];
-    const SHORT_MONTHS = {
-      en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dic'],
-      es: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
-    };
-    const M_I18N = {
-      en: {
-        years_short: 'y',
-        months_short: 'm',
-        TODAY: 'Today'
-      },
-      es: {
-        years_short: 'a',
-        months_short: 'm',
-        TODAY: 'Hoy'
-      }
-    }
+			const onReady = (givenCbk) => {
+				let h = false;
+				const cbk = () => {
+					if (!h) {
+						h = true;
+						givenCbk();
+					}
+				};
+				const checkReadyState = () => {
+					if (document.readyState === "interactive" || document.readyState === "complete") {
+						cbk();
+					}
+				};
+				document.addEventListener("readystatechange", cbk);
+				document.addEventListener("DOMContentLoaded", cbk);
+				checkReadyState();
+			};
+		</script>
+		<script src="js/lang.js" type="text/javascript"></script>
+		<script src="js/pages.js" type="text/javascript"></script>
+		<script src="js/date-range.js" type="text/javascript"></script>
+	</head>
 
-    const onReady = (givenCbk) => {
-      let h = false;
-      const cbk = () => {
-        if (!h) {
-          h = true;
-          givenCbk();
-        }
-      }
-      const checkReadyState = () => {
-        if (document.readyState === 'interactive' || document.readyState === 'complete') {
-          cbk();
-        }
-      }
-      document.addEventListener('readystatechange', cbk);
-      document.addEventListener('DOMContentLoaded', cbk);
-      checkReadyState();
-    }
-  </script>
-  <script src="js/lang.js" type="text/javascript"></script>
-  <script src="js/pages.js" type="text/javascript"></script>
-  <script src="js/date-range.js" type="text/javascript"></script>
-</head>
+	<body>
+		<section class="layout-col vcard">
+			<div class="col center-contents">
+				<img src="./daniel.jpg" class="person" />
+			</div>
+			<div class="main">
+				<h1>Daniel Goberitz</h1>
+				<p>
+					<strong lang="en"><i class="far fa-calendar"></i>Born Date</strong>
+					<strong lang="es"><i class="far fa-calendar"></i>Fecha de nacimiento</strong>
+					<span>21 Nov 1986</span>
+				</p>
+				<p>
+					<strong lang="en"><i class="far fa-id-card"></i>Citizenship</strong>
+					<strong lang="es"><i class="far fa-id-card"></i>Ciudadanía</strong>
+					<span lang="en">Italian, Argentinian</span>
+					<span lang="es">Italiana, Argentina</span>
+				</p>
+				<p>
+					<strong lang="en"><i class="fas fa-home"></i>Residence</strong>
+					<strong lang="es"><i class="fas fa-home"></i>Residencia</strong>
+					<span lang="en">Barcelona, Barcelona, Spain</span>
+					<span lang="es">Barcelona, Barcelona, España</span>
+				</p>
+				<p>
+					<strong><i class="fab fa-linkedin"></i>Linked In</strong>
+					<a lang="en" href="https://www.linkedin.com/in/daniel-goberitz/en" target="_blank">https://www.linkedin.com/in/daniel-goberitz/en</a>
+					<a lang="es" href="https://www.linkedin.com/in/daniel-goberitz/es" target="_blank">https://www.linkedin.com/in/daniel-goberitz/es</a>
+				</p>
+				<p>
+					<strong><i class="fab fa-github"></i>Github</strong>
+					<a href="https://github.com/danyg/" target="_blank">https://github.com/danyg/</a>
+				</p>
+			</div>
+		</section>
+		<section class="layout-col">
+			<h1 lang="en">About me</h1>
+			<p lang="en">
+				Self-Taught, passionate about, Software Quality, Clean Code and architecture of software and agile methodologies. I focus in what adds value to
+				sustainability and flexibility to the code allowing to fulfils the business requirements and avoid the phenomenon known as "The Big Ball of Mud" and
+				heat dead of code.
+			</p>
 
-<body>
-  <section class="layout-col vcard">
-    <div class="col center-contents">
-      <img src='./daniel.jpg' class="person" />
-    </div>
-    <div class="main">
-      <h1>Daniel Goberitz</h1>
-      <p>
-        <strong lang="en"><i class="far fa-calendar"></i>Born Date</strong>
-        <strong lang="es"><i class="far fa-calendar"></i>Fecha de nacimiento</strong>
-        <span>21 Nov 1986</span>
-      </p>
-      <p>
-        <strong lang="en"><i class="far fa-id-card"></i>Citizenship</strong>
-        <strong lang="es"><i class="far fa-id-card"></i>Ciudadanía</strong>
-        <span lang="en">Italian, Argentinian</span>
-        <span lang="es">Italiana, Argentina</span>
-      </p>
-      <p>
-        <strong lang="en"><i class="fas fa-home"></i>Residence</strong>
-        <strong lang="es"><i class="fas fa-home"></i>Residencia</strong>
-        <span lang="en">Barcelona, Barcelona, Spain</span>
-        <span lang="es">Barcelona, Barcelona, España</span>
-      </p>
-      <p>
-        <strong><i class="fab fa-linkedin"></i>Linked In</strong>
-        <a lang="en" href="https://www.linkedin.com/in/daniel-goberitz/en"
-          target="_blank">https://www.linkedin.com/in/daniel-goberitz/en</a>
-        <a lang="es" href="https://www.linkedin.com/in/daniel-goberitz/es"
-          target="_blank">https://www.linkedin.com/in/daniel-goberitz/es</a>
-      </p>
-      <p>
-        <strong><i class="fab fa-github"></i>Github</strong>
-        <a href="https://github.com/danyg/" target="_blank">https://github.com/danyg/</a>
-      </p>
-    </div>
-  </section>
-  <section class="layout-col">
-    <h1 lang="en">About me</h1>
-    <p lang="en">
-      Self-Taught, passionate about clean code and software architectures, that add value to sustainability and
-      flexibility to the
-      code allowing to fulfils the requirements of today and tomorrow
-    </p>
+			<h1 lang="es">Sobre mí</h1>
+			<p lang="es">
+				Autodidacta, apasionado de la calidad de software, Clean Code, la arquitectura del software y metodologías ágiles que agregan valor a la sostenibilidad
+				y flexibilidad del código para satisfacer los requerimientos del negocio y evitan el fenomeno conocido como "The Big Ball of Mud" and heat dead of code.
+			</p>
+		</section>
+		<section class="layout-col">
+			<h1 lang="en">Studies</h1>
+			<h1 lang="es">Estudios</h1>
+			<p lang="en">
+				<strong><i class="fas fa-graduation-cap"></i>Degree</strong>
+				Electronic Technician with Telecommunications orientation<br />
+				Technical School No. 1 Otto Krause, Buenos Aires, Argentina
+			</p>
+			<p lang="es">
+				<strong><i class="fas fa-graduation-cap"></i>Titulo</strong>
+				Técnico Electrónico con orientación en Telecomunicaciones<br />
+				Escuela Técnica No. 1 Otto Krause, Buenos Aires, Argentina
+			</p>
+		</section>
+		<section class="layout-col">
+			<h1 lang="en">Languages</h1>
+			<h1 lang="es">Idiomas</h1>
+			<p lang="en" class="-line-height-2">
+				<strong><i class="flag-icon flag-icon-es"></i>Spanish</strong>
+				Native<br />
+				<strong><i class="flag-icon flag-icon-gb"></i>English</strong> Fluent
+			</p>
+			<p lang="es" class="-line-height-2">
+				<strong><i class="flag-icon flag-icon-es"></i>Español</strong> Lengua materna<br />
+				<strong><i class="flag-icon flag-icon-gb"></i>Inglés</strong>
+				Fluido<br />
+				<strong><i class="flag-icon flag-icon-es-ct"></i>Catalán</strong> Básico
+			</p>
+		</section>
+		<section class="layout-col">
+			<h1 lang="en">Knowledge</h1>
+			<h1 lang="es" class="little-header">Conocimientos</h1>
+			<p>
+				<strong>Javascript</strong>
+				<span lang="en">(since 2006)</span>
+				<span lang="es">(desde 2006)</span>
+				<strong>Typescript</strong>
+				<span lang="en">(since 2017)</span>
+				<span lang="es">(desde 2017)</span>
 
-    <h1 lang="es">Sobre mí</h1>
-    <p lang="es">
-      Autodidacta, apasionado del clean code y arquitecturas de software que agregan valor a la sostenibilidad y
-      flexibilidad del c&oacute;digo para satisfacer los requerimientos de hoy y ma&ntilde;ana
-    </p>
-  </section>
-  <section class="layout-col">
-    <h1 lang="en">Studies</h1>
-    <h1 lang="es">Estudios</h1>
-    <p lang="en">
-      <strong><i class="fas fa-graduation-cap"></i>Degree</strong>
-      Electronic Technician with Telecommunications orientation<br />
-      Technical School No. 1 Otto Krause, Buenos Aires, Argentina
-    </p>
-    <p lang="es">
-      <strong><i class="fas fa-graduation-cap"></i>Titulo</strong>
-      Técnico Electrónico con orientación en Telecomunicaciones<br />
-      Escuela Técnica No. 1 Otto Krause, Buenos Aires, Argentina
-    </p>
-  </section>
-  <section class="layout-col">
-    <h1 lang="en">Languages</h1>
-    <h1 lang="es">Idiomas</h1>
-    <p lang="en" class="-line-height-2">
-      <strong><i class="flag-icon flag-icon-es"></i>Spanish</strong> Native<br />
-      <strong><i class="flag-icon flag-icon-gb"></i>English</strong> Fluent
-    </p>
-    <p lang="es" class="-line-height-2">
-      <strong><i class="flag-icon flag-icon-es"></i>Español</strong> Lengua materna<br />
-      <strong><i class="flag-icon flag-icon-gb"></i>Inglés</strong> Fluido<br />
-      <strong><i class="flag-icon flag-icon-es-ct"></i>Catalán</strong> Básico
-    </p>
-  </section>
-  <section class="layout-col">
-    <h1 lang="en">Knowledge</h1>
-    <h1 lang="es" class="little-header">Conocimientos</h1>
-    <p>
-      <strong>Javascript, Typescript</strong>
-      <br />
-      <strong>React, Redux, Sagas, Thunk </strong>
-      <q lang="en">(using redux as CQRS bus)</q>
-      <q lang="es">(Usando redux as bus CQRS)</q>
-      <br />
-      <strong>Jest, Enzyme & react testing library</strong>
-      <br />
-      <strong>TDD</strong>
-      <q lang="en">Experienced</q>
-      <q lang="es">Experimentado</q>
-      <br />
-      <strong>Frontend Unit-Test</strong>
-      <q lang="en">Several years of experience and teaching it</q>
-      <q lang="es">Several años de experiencia y enseñando lo.</q>
-      <br />
-      <strong>Node.js</strong>
-      <q lang="en">Very familiar with. Knowledge on express, socket.io, mongodb-driver and more.</q>
-      <q lang="es">Muy familiarizado. Con conocimientos en express, socket.io, mongodb-driver y mas.</q>
-      <br />
-      <strong>Java Unit-Test (Mockito/Junit)</strong>
-      <q lang="en">Experienced.</q>
-      <q lang="es">Con experiencia.</q>
-      <br />
-      <strong>Java 8 with Spring 4</strong>
-      <q lang="en">Equivalent to 4 years of experience.</q>
-      <q lang="es">Equivalente a 4 a&ntilde;os de experiencia.</q>
-      <br />
-      <strong>Maven</strong>
-      <q lang="en">Heavily experienced, also developing plugins for it</q>
-      <q lang="es">Altamente experimentado, incluso desarrollando plugins para él</q>
-      <br />
-      <strong>CSS</strong>
-      <q lang="en">2nd tongue.</q>
-      <q lang="es">2da lengua.</q>
-      <br />
-      <strong>Docker, Linux & Bash scripts</strong>
-      <q lang="en">User and intermediate sysadmin level.</q>
-      <q lang="es">Usuario y sysadmin Intermedio.</q>
-      <br />
-      <strong>Selenium &amp; Cucumber</strong>
-      <q lang="en">5+ years working with them. Also I've used in JVM and JS forms.</q>
-      <q lang="es">M&acute;s de 5 a&ntilde;os con ellos. Lo he usado en sus formas JVM y JS.</q>
-      <br />
-      <strong>Python 3</strong>
-      <q lang="en">as a hobby but with TDD</q>
-      <q lang="es">Como hobby con tdd</q>
-      <br />
-      <strong lang="es">También</strong>
-      <strong lang="en">Also</strong>
-      <span class="pill">
-        <span lang="en">VSCode and VSCode Extension Development</span>
-        <span lang="es">VSCode y desarrollo de extensiones de VSCode</span>
-      </span>
-      <span class="pill">IntelliJ</span>
-      <span class="pill">C#</span>
-      <span class="pill">MacOS X</span>
-      <span class="pill">Windows</span>
-      <span class="pill"><span lang="en">Assembly x86,</span><span lang="es">Ensamblador x86</span></span>
-      <span class="pill"><span lang="en">SQL for MySQL,</span><span lang="es">SQL para MySQL</span></span>
-      <span class="pill">Photoshop</span>
-      <span class="pill">jQuery</span>
-      <span class="pill">C</span>
-      <span class="pill">Unraid</span>
-      <span class="pill">MongoDB</span>
+				<br />
+				<strong>Java 1.6, Java 8, Spring 3 and 4, Unit-Test (Mockito/Junit 5), Maven plugin development</strong>
+				<span lang="en">(2014-2019)</span>
+				<span lang="es">(2014-2019)</span>
+				<br />
 
-    </p>
-  </section>
-  <section class="layout-col">
-    <h1>Hobbies</h1>
-    <p lang="en">
-      Motorcyclist, Maker, Electronics, Pilates, Gamer
-    </p>
-    <p lang="es">
-      Motero, Bricolaje, Electrónica, Pilates, Video Juegos
-    </p>
-  </section>
-  <section class="layout-col">
-    <h1 lang="en">Work History<br /> &gt;14 years</span>
-    </h1>
-    <h1 lang="es">Historial<br /> &gt;14 a&ntilde;os</h1>
-    <ul class="no-bullets">
-      <li>
-        <i class="flag-icon flag-icon-es"></i>
-        <span class="date-range" data-date-start="2022-01-31" data-date-end="2022-07-01">Feb 2022 - Jul 2022</span>
-        ContractBook
-        <span class="position">Full Stack Developer</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-es"></i>
-        <span class="date-range" data-date-start="2020-02-03" data-date-end="2020-09-01">Feb 2020 - Sep 2020</span>
-        Merkle Inc
-        <span class="position">Full Stack Developer</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-es"></i>
-        <span class="date-range" data-date-start="2019-02-25" data-date-end="2019-10-11">Mar 2019 - Oct 2019</span>
-        <span lang="en">Axa Holding (Hired by K-Lagan Consulting)</span>
-        <span lang="es">Axa Holding (contratado por K-Lagan Consulting)</span>
-        <span class="position">Tech-Lead</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-es"></i>
-        <span class="date-range" data-date-start="2013-10-13" data-date-end="2019-02-21">Oct 2013 - Feb 2019</span>
-        Comet Global Consulting / Merkle Inc
-        <span class="position">Dev-Lead</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-es"></i>
-        <span class="date-range" data-date-start="2011-03-01" data-date-end="2013-05-12">Mar 2011 - May 2013</span>
-        Lavinia Interactiva
-        <span class="position">Senior Developer</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-es"></i>
-        <span class="date-range" data-date-start="2008-10-01" data-date-end="2011-02-01">Oct 2008 - Feb 2011</span>
-        El Sentido Software S.L.
-        <span class="position">Senior Developer</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-ar"></i>
-        <span class="date-range" data-date-start="2008-04-01" data-date-end="2008-08-01">Apr 2008 - Jul 2008</span>
-        Bassobroveli
-        <span class="position">Semi Senior Developer</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-ar"></i>
-        <span class="date-range" data-date-start="2006-06-01" data-date-end="2008-04-01">Jun 2006 - Apr 2008</span>
-        451&deg;
-        <span class="position">Junior Developer/Semi Senior Developer</span>
-      </li>
-      <li>
-        <i class="flag-icon flag-icon-ar"></i>
-        <span class="date-range" data-date-start="2006-03-01" data-date-end="2006-06-01">Mar 2006 - Jun 2006</span>
-        HandsSolutions (ARG)
-        <span class="position">Junior Developer</span>
-      </li>
-    </ul>
-  </section>
-  <section class="layout-col">
-    <h1 lang="en">Significant Projects</h1>
-    <h1 lang="es">Proyectos Destacados</h1>
-    <div class="main">
-      <article>
-        <h2>
-          <span lang="en">FullStack Developer for British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
-          <span lang="es">FullStack Developer para British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
-          <span class="date-range" data-date-start="2020-02-03" data-date-end="TODAY">Feb 2020 - Today</span>
-        </h2>
-        <p lang="en">
-          Full stack developer working with Java 8, Cucumber, Selenium-JVM, Aurelia, Redux, React, in a scrum team of 7
-          composed of 3 Devs and 3 QAs + 1 SM.
-        </p>
-        <p lang="es">
-          Full stack developer usando Java 8, Cucumber, Selenium-JVM, Aurelia, Redux, React, en un equipo scrum de 7
-          compuesto de Desarrolladores and 3 QAs + 1 Scrum Master.
-        </p>
-        <h2>
-          <span lang="en">Dev lead for British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
-          <span lang="es">Dev lead para British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
-          <span class="date-range" data-date-start="2013-10-13" data-date-end="2019-02-21">Oct 2013 - Feb 2019</span>
-        </h2>
-        <p lang="en">
-          Dev Lead at a scrum team of 6 to 8 people, 2~3 QAs 2~4 Devs and 1 Scrum Master/Product Owner, but I started as
-          a senior developer at Comet (now know as Merkle Inc).
-          I was hired to start a new team that would migrate an existing web, part of a CRM application, for Sky Uk.
-        </p>
-        <p lang="es">
-          Dev Lead en un equipo scrum de 6 a 8 personas, 2~3 QAs 2~4 Devs y 1 Scrum Master/Product Owner, pero comencé
-          como senior developer en Comet (ahora Merkle Inc).
-          Fui contratado para comenzar un nuevo equipo que migraría una web existente, parte de un aplicación de
-          CRM para Sky Uk.
-        </p>
-        <p lang="en">
-          As Dev Lead my responsibilities were:
-        </p>
-        <p lang="es">
-          Como Dev Lead mis responsabilidades eran:
-        </p>
-        <ul lang="en">
-          <li>Mentoring devs and QAs</li>
-          <li>Software Architecture</li>
-          <li>Technical point contact for the other teams in Sky</li>
-          <li>Scrum Master/Product Owner Backup</li>
-          <li>and of course FullStack Developer</li>
-        </ul>
-        <ul lang="es">
-          <li>Mentor para devs y QAs</li>
-          <li>Arquitectura de Software</li>
-          <li>Punto de contacto técnico para otros equipos dentro de Sky</li>
-          <li>Backup de Scrum Master/Product Owner</li>
-          <li>Y por supuesto FullStack Developer</li>
-        </ul>
+				<strong>React, Redux, Sagas, Thunk</strong>
+				<q lang="en">(using redux as CQRS bus)</q>
+				<q lang="es">(Usando redux as bus CQRS)</q>
+				<span lang="en">(since 2017)</span>
+				<span lang="es">(desde 2017)</span>
+				<br />
 
-        <h3>
-          <span lang="en">Several Online Front-End for Sky @ Merkle Inc</span>
-          <span lang="es">Varios Front-Ends para Sky CRM @ Merkle Inc</span>
-          <span class="date-range" data-date-start="2017-03-01" data-date-end="2019-02-21">(Mar 2017 - Feb 2019)</span>
-        </h3>
-        <p lang="en">
-          Several project of short development, 3 - 4 month each, for them we've used React and Redux in combination
-          with <a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
-          <a href="http://www.thucydides.info" target="_blank">Serenity</a> with <a href="https://cucumber.io/"
-            target="_blank">Cucumber</a> was used for Acceptance Tests
-        </p>
-        <p lang="es">
-          Varios proyectos de desarrollo rápido, 3 - 4 meses cada uno, en ellos hemos usado React y Redux en
-          combinación con <a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
-          Para los Test de aceptación se utilizado <a href="http://www.thucydides.info" target="_blank">Serenity</a> con
-          <a href="https://cucumber.io/" target="_blank">Cucumber</a>
-        </p>
+				<strong>TDD</strong>
+				<span lang="en">(since 2016)</span>
+				<span lang="es">(desde 2016)</span>
+				<br />
 
-        <br />
+				<strong>Jest, React Testing Library, Playwright, Cypress</strong>
+				<br />
 
-        <h3>
-          <span lang="en">Billing View, Sky CRM @ Merkle Inc</span>
-          <span lang="es">Billing View, Sky CRM @ Merkle Inc</span>
-          <span class="date-range" data-date-start="2013-10-13" data-date-end="2017-03-01">(Oct 2013 - Mar 2017)</span>
-        </h3>
-        <p lang="en">
-          For it we use Durandal as SPA framework (imposed by customer) Jasmine for unit testing, Cucumber and Selenium
-          for Acceptance Tests and Java 6 (then 7) and Spring 3.
-        </p>
-        <p lang="es">
-          Para el proyecto usamos Durandal como framework SPA (impuesto por el cliente), Jasmine para los test
-          unitarios, Cucumber y Selenium para los test de aceptación, Java 6 (luego 7) y Spring 3.
-        </p>
-        <p lang="es">
-          Como parte de este proyecto, he tenido que crear algunos plugins de maven, para poder desplegar la web e
-          inyectar mecanismos de mocking de sistemas externos para los tests de aceptación. también he
-          creado un plugin para jasmine que permite renderizar y acceder a Widgets y módulos de durandal, para su unit
-          testing (<a href="https://github.com/danyg/jasmine-durandal" target="_blank">jasmine-durandal</a>).
-        </p>
-        <p lang="en">
-          As part of this project I've created some maven plugins, to be able to deploy the web and inject mocking
-          mechanisms for 3rd party systems for acceptance tests. Also created a TestBed to be able to render and access
-          Durandal Modules and widgets (components) in Jasmine tests (<a
-            href="https://github.com/danyg/jasmine-durandal" target="_blank">jasmine-durandal</a>).
-        </p>
+				<strong>Frontend Unit-Test</strong>
+				<q lang="en">Several years of experience and teaching it</q>
+				<q lang="es">Several años de experiencia y enseñando lo.</q>
+				<span lang="en">(since 2016)</span>
+				<span lang="es">(desde 2016)</span>
+				<br />
 
-      </article>
+				<strong>Node.js</strong>
+				<q lang="en">Very familiar with. Knowledge on express, koa, socket.io, mongodb-driver and more.</q>
+				<q lang="es">Muy familiarizado. Con conocimientos en express, koa, socket.io, mongodb-driver y mas.</q>
+				<span lang="en">(since 2011)</span>
+				<span lang="es">(desde 2011)</span>
+				<br />
 
-      <article>
-        <h2>
-          3 a la carta @ Lavinia Interactiva<br />
-          <span class="date-range" data-date-start="2011-03-01" data-date-end="2013-05-12">(Mar 2011 - May 2013)</span>
-        </h2>
-        <p lang="en">
-          Lavnina's way of working were one dev one project. So as (only) part of this project I was entrusted to
-          rewrite the old Flash Version of 3 a la carta (TV3 Catalonian public Television) to the newest technologies of
-          HTML5.
-        </p>
-        <p lang="es">
-          La forma de trabajar en lavinia en ese momento era un proyecto un developer. Asi que como (unica) parte de
-          este proyecto me fue encomendado reescribir la vieja versión en flash de 3 a la carta (TV 3
-          Televisión pública catalana) a las nuevas tecnologías de HTML5.
-        </p>
-        <p lang="en">
-          Also this project needed to be integrated with Java projects, so the customer (TV3) ask us to deliver our part
-          as a maven artifact, and properly tested with unit test. Neither to say that this was a big challenge and one
-          that I very proud of as I successfully achieved.
-        </p>
-        <p lang="es">
-          También para este proyecto se requirió que sea integrado con otros proyectos Java, por ello el
-          cliente nos pidió que se entregara como un artefacto de maven, y propiamente testado con test
-          unitarios. No hace falta decir que fue un gran desafío para mi del cual me siento muy orgulloso.
-        </p>
-        <p lang="en">
-          The project was an SPA with a full-browser video with menus over it (like a desktop video player) where the
-          user was able to select several live signals of TV3 (TV3, 324, 33, Super, etc...) and also browse for the on
-          demand videos.<br />
-          The application was feed by xml generated by a java backend, and the video feeds where also given by TV3.
-        </p>
-        <p lang="es">
-          El proyecto era una SPA con un vídeo llenando todo el navegador, con menúes sobre él (como un
-          reproductor de vídeo de escritorio), donde el usuario era capaz de seleccionar una de las
-          se&ntilde;ales en vivo de TV3 (TV3, 324, 33, Super, etc...) y también navegar por los vídeos on
-          demand ofrecidos.<br />
-          La aplicación era proveída por xml generados un backend java, y las se&ntilde;ales de video y
-          los videos eran proveídos por el cliente.
-        </p>
-      </article>
-    </div>
-  </section>
+				<strong>CSS</strong>
+				<span lang="en">(since 2006)</span>
+				<span lang="es">(desde 2006)</span>
+				<strong>HTML</strong>
+				<span lang="en">(since 2006)</span>
+				<span lang="es">(desde 2006)</span>
+				<br />
 
+				<strong>Docker, Linux & Bash scripts</strong>
+				<q lang="en">User and intermediate sysadmin level.</q>
+				<q lang="es">Usuario y sysadmin Intermedio.</q>
+				<br />
 
-</body>
+				<strong>Selenium &amp; Cucumber</strong>
+				<span lang="en">(since 2014)</span>
+				<span lang="es">(desde 2014)</span>
+				<q lang="en">JVM and JS/TS forms.</q>
+				<q lang="es">En JVM y JS/TS.</q>
+				<br />
 
+				<strong>Python 3</strong>
+				<q lang="en">as a hobby but with TDD</q>
+				<q lang="es">Como hobby con tdd</q>
+				<br />
+
+				<strong lang="es">También</strong>
+				<strong lang="en">Also</strong>
+				<span class="pill">
+					<span lang="en">VSCode and VSCode Extension Development</span>
+					<span lang="es">VSCode y desarrollo de extensiones de VSCode</span>
+				</span>
+				<span class="pill">IntelliJ</span>
+				<span class="pill">C#</span>
+				<span class="pill">MacOS X</span>
+				<span class="pill">Windows</span>
+				<span class="pill"><span lang="en">Assembly x86,</span><span lang="es">Ensamblador x86</span></span>
+				<span class="pill"><span lang="en">SQL for MySQL and Oracle</span><span lang="es">SQL para MySQL and Oracle</span></span>
+				<span class="pill">Photoshop</span>
+				<span class="pill">jQuery</span>
+				<span class="pill">C</span>
+				<span class="pill">C++</span>
+				<span class="pill">Unraid</span>
+				<span class="pill">MongoDB</span>
+				<span class="pill">Kubernetes</span>
+				<span class="pill">AWS</span>
+				<span class="pill">Azure</span>
+			</p>
+		</section>
+		<section class="layout-col">
+			<h1>Hobbies</h1>
+			<p lang="en">Motorcyclist, Maker, Electronics, Pilates, Gamer</p>
+			<p lang="es">Motero, Bricolaje, Electrónica, Pilates, Video Juegos</p>
+		</section>
+		<section class="layout-col">
+			<h1 lang="en">
+				Work History<br />
+				&gt;18 years
+			</h1>
+			<h1 lang="es">
+				Historial<br />
+				&gt;18 años
+			</h1>
+			<ul class="no-bullets">
+				<li>
+					<i class="flag-icon flag-icon-es"></i>
+					<span class="date-range" data-date-start="2022-10-17" data-date-end="TODAY">Oct 2022 - Today</span>
+					Treatwell
+					<span class="position">Frontend Developer</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-es"></i>
+					<span class="date-range" data-date-start="2022-01-31" data-date-end="2022-07-01">Feb 2022 - Jul 2022</span>
+					ContractBook
+					<span class="position">Full Stack Developer</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-es"></i>
+					<span class="date-range" data-date-start="2020-02-03" data-date-end="2020-09-01">Feb 2020 - Sep 2020</span>
+					Merkle Inc
+					<span class="position">Full Stack Developer</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-es"></i>
+					<span class="date-range" data-date-start="2019-02-25" data-date-end="2019-10-11">Mar 2019 - Oct 2019</span>
+					<span lang="en">Axa Holding (Hired by K-Lagan Consulting)</span>
+					<span lang="es">Axa Holding (contratado por K-Lagan Consulting)</span>
+					<span class="position">Tech-Lead</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-es"></i>
+					<span class="date-range" data-date-start="2013-10-13" data-date-end="2019-02-21">Oct 2013 - Feb 2019</span>
+					Comet Global Consulting / Merkle Inc
+					<span class="position">Dev-Lead</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-es"></i>
+					<span class="date-range" data-date-start="2011-03-01" data-date-end="2013-05-12">Mar 2011 - May 2013</span>
+					Lavinia Interactiva
+					<span class="position">Senior Developer</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-es"></i>
+					<span class="date-range" data-date-start="2008-10-01" data-date-end="2011-02-01">Oct 2008 - Feb 2011</span>
+					El Sentido Software S.L.
+					<span class="position">Senior Developer</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-ar"></i>
+					<span class="date-range" data-date-start="2008-04-01" data-date-end="2008-08-01">Apr 2008 - Jul 2008</span>
+					Bassobroveli
+					<span class="position">Semi Senior Developer</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-ar"></i>
+					<span class="date-range" data-date-start="2006-06-01" data-date-end="2008-04-01">Jun 2006 - Apr 2008</span>
+					451&deg;
+					<span class="position">Junior Developer/Semi Senior Developer</span>
+				</li>
+				<li>
+					<i class="flag-icon flag-icon-ar"></i>
+					<span class="date-range" data-date-start="2006-03-01" data-date-end="2006-06-01">Mar 2006 - Jun 2006</span>
+					HandsSolutions (ARG)
+					<span class="position">Junior Developer</span>
+				</li>
+			</ul>
+		</section>
+		<section class="layout-col">
+			<h1 lang="en">Significant Projects</h1>
+			<h1 lang="es">Proyectos Destacados</h1>
+			<div class="main">
+				<article>
+					<h2>
+						<span lang="en">Frontend Developer for Treatwell</span>
+						<span lang="es">Frontend Developer para Treatwell</span>
+            <span class="date-range" data-date-start="2022-10-17" data-date-end="TODAY">Feb 2020 - Today</span>
+					</h2>
+					<p lang="en">
+						At Treatwell, my role was frontend developer, but I start helping as a QA/SDET creating a E2E Suite as the code was barely tested and was hard to
+						test in lower layers (unit-tests). The main goal was to start covering as much functionality as possible then with confidence start refactoring the
+						code so that we can add unit tests and reduce the amount of request after each release.
+					</p>
+					<p lang="es">
+						En Treatwell. mi rol fue frontend developer, pero ayude también como QA/SDET creando una suite de tests E2E, ya que el código estaba apenas probado
+						y era imposible crear tests en capas mas abajo (unit-test). El principal objetivo era comenzar a cubrir la funcionalidad lo mas posible entonces con
+						confianza comenzar a refactorizar el código para que admita ser probado con test unitarios y disminuir la cantidad de bugs/errores que recibíamos
+						después de cada release.
+					</p>
+				</article>
+				<article>
+					<h2>
+						<span lang="en">FullStack Developer for British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
+						<span lang="es">FullStack Developer para British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
+						<span class="date-range" data-date-start="2020-02-03" data-date-end="2020-09-01">Feb 2020 - Sep 2020</span>
+					</h2>
+					<p lang="en">
+						Full stack developer working with Java 8, Cucumber, Selenium-JVM, Aurelia, Redux, React, in a scrum team of 7 composed of 3 Devs and 3 QAs + 1 SM.
+					</p>
+					<p lang="es">
+						Full stack developer usando Java 8, Cucumber, Selenium-JVM, Aurelia, Redux, React, en un equipo scrum de 7 compuesto de Desarrolladores and 3 QAs +
+						1 Scrum Master.
+					</p>
+					<h2>
+						<span lang="en">Dev lead for British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
+						<span lang="es">Dev lead para British Sky Broadcasting Ltd (SKY) @ Merkle Inc</span>
+						<span class="date-range" data-date-start="2013-10-13" data-date-end="2019-02-21">Oct 2013 - Feb 2019</span>
+					</h2>
+					<p lang="en">
+						Dev Lead at a scrum team of 6 to 8 people, 2~3 QAs 2~4 Devs and 1 Scrum Master/Product Owner, but I started as a senior developer at Comet (now know
+						as Merkle Inc). I was hired to start a new team that would migrate an existing web, part of a CRM application, for Sky Uk.
+					</p>
+					<p lang="es">
+						Dev Lead en un equipo scrum de 6 a 8 personas, 2~3 QAs 2~4 Devs y 1 Scrum Master/Product Owner, pero comencé como senior developer en Comet (ahora
+						Merkle Inc). Fui contratado para comenzar un nuevo equipo que migraría una web existente, parte de un aplicación de CRM para Sky Uk.
+					</p>
+					<p lang="en">As Dev Lead my responsibilities were:</p>
+					<p lang="es">Como Dev Lead mis responsabilidades eran:</p>
+					<ul lang="en">
+						<li>Mentoring devs and QAs</li>
+						<li>Software Architecture</li>
+						<li>Technical point contact for the other teams in Sky</li>
+						<li>Scrum Master/Product Owner Backup</li>
+						<li>and of course FullStack Developer</li>
+					</ul>
+					<ul lang="es">
+						<li>Mentor para devs y QAs</li>
+						<li>Arquitectura de Software</li>
+						<li>Punto de contacto técnico para otros equipos dentro de Sky</li>
+						<li>Backup de Scrum Master/Product Owner</li>
+						<li>Y por supuesto FullStack Developer</li>
+					</ul>
+
+					<h3>
+						<span lang="en">Several Online Front-End for Sky @ Merkle Inc</span>
+						<span lang="es">Varios Front-Ends para Sky CRM @ Merkle Inc</span>
+						<span class="date-range" data-date-start="2017-03-01" data-date-end="2019-02-21">(Mar 2017 - Feb 2019)</span>
+					</h3>
+					<p lang="en">
+						Several project of short development, 3 - 4 month each, for them we've used React and Redux in combination with
+						<a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>.
+						<a href="http://www.thucydides.info" target="_blank">Serenity</a>
+						with <a href="https://cucumber.io/" target="_blank">Cucumber</a> was used for Acceptance Tests
+					</p>
+					<p lang="es">
+						Varios proyectos de desarrollo rápido, 3 - 4 meses cada uno, en ellos hemos usado React y Redux en combinación con
+						<a href="https://www.sky.com/toolkit" target="_blank">Sky Toolkit</a>. Para los Test de aceptación se utilizado
+						<a href="http://www.thucydides.info" target="_blank">Serenity</a>
+						con
+						<a href="https://cucumber.io/" target="_blank">Cucumber</a>
+					</p>
+
+					<br />
+
+					<h3>
+						<span lang="en">Billing View, Sky CRM @ Merkle Inc</span>
+						<span lang="es">Billing View, Sky CRM @ Merkle Inc</span>
+						<span class="date-range" data-date-start="2013-10-13" data-date-end="2017-03-01">(Oct 2013 - Mar 2017)</span>
+					</h3>
+					<p lang="en">
+						For it we use Durandal as SPA framework (imposed by customer) Jasmine for unit testing, Cucumber and Selenium for Acceptance Tests and Java 6 (then
+						7) and Spring 3.
+					</p>
+					<p lang="es">
+						Para el proyecto usamos Durandal como framework SPA (impuesto por el cliente), Jasmine para los test unitarios, Cucumber y Selenium para los test de
+						aceptación, Java 6 (luego 7) y Spring 3.
+					</p>
+					<p lang="es">
+						Como parte de este proyecto, he tenido que crear algunos plugins de maven, para poder desplegar la web e inyectar mecanismos de mocking de sistemas
+						externos para los tests de aceptación. también he creado un plugin para jasmine que permite renderizar y acceder a Widgets y módulos de durandal,
+						para su unit testing (<a href="https://github.com/danyg/jasmine-durandal" target="_blank">jasmine-durandal</a>).
+					</p>
+					<p lang="en">
+						As part of this project I've created some maven plugins, to be able to deploy the web and inject mocking mechanisms for 3rd party systems for
+						acceptance tests. Also created a TestBed to be able to render and access Durandal Modules and widgets (components) in Jasmine tests (<a
+							href="https://github.com/danyg/jasmine-durandal"
+							target="_blank"
+							>jasmine-durandal</a
+						>).
+					</p>
+				</article>
+
+				<!-- <article>
+					<h2>
+						3 a la carta @ Lavinia Interactiva<br />
+						<span class="date-range" data-date-start="2011-03-01" data-date-end="2013-05-12">(Mar 2011 - May 2013)</span>
+					</h2>
+					<p lang="en">
+						Lavnina's way of working were one dev one project. So as (only) part of this project I was entrusted to rewrite the old Flash Version of 3 a la
+						carta (TV3 Catalonian public Television) to the newest technologies of HTML5.
+					</p>
+					<p lang="es">
+						La forma de trabajar en lavinia en ese momento era un proyecto un developer. Asi que como (unica) parte de este proyecto me fue encomendado
+						reescribir la vieja versión en flash de 3 a la carta (TV 3 Televisión pública catalana) a las nuevas tecnologías de HTML5.
+					</p>
+					<p lang="en">
+						Also this project needed to be integrated with Java projects, so the customer (TV3) ask us to deliver our part as a maven artifact, and properly
+						tested with unit test. Neither to say that this was a big challenge and one that I very proud of as I successfully achieved.
+					</p>
+					<p lang="es">
+						También para este proyecto se requirió que sea integrado con otros proyectos Java, por ello el cliente nos pidió que se entregara como un artefacto
+						de maven, y propiamente testado con test unitarios. No hace falta decir que fue un gran desafío para mi del cual me siento muy orgulloso.
+					</p>
+					<p lang="en">
+						The project was an SPA with a full-browser video with menus over it (like a desktop video player) where the user was able to select several live
+						signals of TV3 (TV3, 324, 33, Super, etc...) and also browse for the on demand videos.<br />
+						The application was feed by xml generated by a java backend, and the video feeds where also given by TV3.
+					</p>
+					<p lang="es">
+						El proyecto era una SPA con un vídeo llenando todo el navegador, con menúes sobre él (como un reproductor de vídeo de escritorio), donde el usuario
+						era capaz de seleccionar una de las señales en vivo de TV3 (TV3, 324, 33, Super, etc...) y también navegar por los vídeos on demand ofrecidos.<br />
+						La aplicación era proveída por xml generados un backend java, y las señales de video y los videos eran proveídos por el cliente.
+					</p>
+				</article> -->
+			</div>
+		</section>
+	</body>
 </html>
