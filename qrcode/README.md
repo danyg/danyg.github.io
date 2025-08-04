@@ -1,0 +1,144 @@
+# QR Code Reader
+
+A modern, responsive web application for reading QR codes from images. Built with vanilla JavaScript and designed to work seamlessly on both desktop and mobile devices.
+
+## Features
+
+- **Paste Images**: Paste images directly from clipboard using Ctrl+V (Windows/Linux) or Cmd+V (Mac)
+- **File Upload**: Upload image files from your device
+- **Camera Capture**: Use your device's camera to scan QR codes in real-time
+- **Responsive Design**: Works perfectly on desktop and mobile devices
+- **Copy to Clipboard**: Easily copy decoded QR code content
+- **Modern UI**: Clean, intuitive interface with smooth animations
+
+## How to Use
+
+### Desktop Usage
+1. **Paste Image**: Copy an image containing a QR code to your clipboard, then press `Ctrl+V` (Windows/Linux) or `Cmd+V` (Mac)
+2. **Upload File**: Click "Upload File" to select an image from your computer
+3. **Use Camera**: Click "Use Camera" to scan QR codes with your webcam
+
+### Mobile Usage
+1. **Upload File**: Tap "Upload File" to select an image from your device
+2. **Use Camera**: Tap "Use Camera" to scan QR codes with your device's camera
+3. **Paste Image**: Copy an image to clipboard and tap "Paste Image"
+
+## Technical Details
+
+- **QR Code Detection**: Uses the [jsQR](https://github.com/cozmo/jsQR) library for reliable QR code detection
+- **Image Processing**: Supports all common image formats (JPEG, PNG, GIF, WebP, etc.)
+- **Camera Access**: Uses the WebRTC API for camera access
+- **Clipboard API**: Modern clipboard API for seamless image pasting
+- **Responsive Design**: CSS Grid and Flexbox for optimal layout on all screen sizes
+
+## Browser Support
+
+- Chrome 66+ (recommended)
+- Firefox 63+
+- Safari 13.1+
+- Edge 79+
+
+**Note**: Camera functionality requires HTTPS in production (GitHub Pages provides this automatically).
+
+## Deployment to GitHub Pages
+
+1. **Create a GitHub Repository**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/yourusername/qr-reader.git
+   git push -u origin main
+   ```
+
+2. **Enable GitHub Pages**:
+   - Go to your repository on GitHub
+   - Navigate to Settings → Pages
+   - Select "Deploy from a branch"
+   - Choose "main" branch and "/ (root)" folder
+   - Click "Save"
+
+3. **Your site will be available at**: `https://yourusername.github.io/qr-reader`
+
+## Local Development
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/qr-reader.git
+   cd qr-reader
+   ```
+
+2. **Open in browser**:
+   - Simply open `index.html` in your browser
+   - Or use a local server:
+     ```bash
+     # Using Python 3
+     python -m http.server 8000
+     
+     # Using Node.js (if you have http-server installed)
+     npx http-server
+     ```
+
+3. **Access the application**:
+   - If using a local server: `http://localhost:8000`
+   - If opening directly: `file:///path/to/your/index.html`
+
+## File Structure
+
+```
+qr-reader/
+├── index.html          # Main HTML file
+├── styles.css          # CSS styles and responsive design
+├── script.js           # JavaScript functionality
+└── README.md           # This file
+```
+
+## Features in Detail
+
+### Image Processing
+- Supports all major image formats
+- Automatic image scaling and optimization
+- Error handling for corrupted or unsupported files
+
+### QR Code Detection
+- High-accuracy detection using jsQR library
+- Supports various QR code formats and sizes
+- Automatic inversion detection for better recognition
+
+### Camera Functionality
+- Real-time QR code scanning
+- Automatic focus on environment-facing camera (mobile)
+- Continuous scanning with automatic capture
+- Proper cleanup when switching tabs or closing
+
+### User Experience
+- Loading states and progress indicators
+- Error messages with helpful suggestions
+- Success animations and feedback
+- Keyboard shortcuts for power users
+
+## Troubleshooting
+
+### Camera Not Working
+- Ensure you're using HTTPS (required for camera access)
+- Check browser permissions for camera access
+- Try refreshing the page and granting permissions again
+
+### Paste Not Working
+- Make sure you have an image copied to clipboard
+- Try using the "Upload File" option instead
+- Check browser console for any error messages
+
+### QR Code Not Detected
+- Ensure the QR code is clearly visible and not blurry
+- Try with a different image or QR code
+- Make sure the image contains a valid QR code
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE). 
