@@ -213,7 +213,9 @@ class QRCodeReader {
     }
 
     showGenerateSection() {
-        this.hideAllSections();
+        // Hide other sections but don't stop camera if it's already running
+        this.resultSection.style.display = 'none';
+        this.cameraSection.style.display = 'none';
         this.generateSection.style.display = 'block';
         this.qrInput.focus();
     }
@@ -420,7 +422,10 @@ class QRCodeReader {
     displayResult(content) {
         this.qrContent.textContent = content;
         this.qrContent.classList.add('has-content');
-        this.hideAllSections();
+        
+        // Hide other sections but don't stop camera if it's already running
+        this.cameraSection.style.display = 'none';
+        this.generateSection.style.display = 'none';
         this.resultSection.style.display = 'grid';
         this.resultSection.classList.add('success');
         
@@ -445,7 +450,15 @@ class QRCodeReader {
             });
             
             this.cameraVideo.srcObject = this.stream;
-            this.hideAllSections();
+            
+            // Ensure video element has correct attributes for autoplay
+            this.cameraVideo.autoplay = true;
+            this.cameraVideo.playsInline = true;
+            this.cameraVideo.muted = true; // Required for autoplay in some browsers
+            
+            // Hide other sections but don't stop camera if it's already running
+            this.resultSection.style.display = 'none';
+            this.generateSection.style.display = 'none';
             this.cameraSection.style.display = 'block';
             this.isCameraActive = true;
             
