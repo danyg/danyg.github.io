@@ -85,14 +85,14 @@ class QRCodeReader {
         this.downloadBtn.addEventListener('click', () => this.downloadQRCode());
         this.copyBase64Btn.addEventListener('click', () => this.copyBase64());
         this.closeGenerateBtn.addEventListener('click', () => this.hideGenerateSection());
-        
+
         // Allow text pasting in QR input textarea
         this.qrInput.addEventListener('paste', (e) => {
             // Allow normal text pasting in the textarea
             e.stopPropagation();
             e.stopImmediatePropagation();
         });
-        
+
         // Also prevent the global paste handler from interfering with any input/textarea
         this.qrInput.addEventListener('keydown', (e) => {
             if ((e.ctrlKey || e.metaKey) && e.key === 'v') {
@@ -104,7 +104,7 @@ class QRCodeReader {
         document.addEventListener('keydown', (e) => {
             if ((e.ctrlKey || e.metaKey) && e.key === 'v') {
                 // Don't trigger image paste if we're in an input/textarea or generate section
-                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || 
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' ||
                     this.generateSection.style.display !== 'none') {
                     return;
                 }
@@ -171,7 +171,7 @@ class QRCodeReader {
     handleDragOver(e) {
         e.preventDefault();
         e.stopPropagation();
-        
+
         // Check if any of the dragged items are files
         if (e.dataTransfer.types.includes('Files')) {
             this.showDropZone();
@@ -181,7 +181,7 @@ class QRCodeReader {
     handleDragLeave(e) {
         e.preventDefault();
         e.stopPropagation();
-        
+
         // Only hide drop zone if we're leaving the document entirely
         if (!e.relatedTarget || !document.contains(e.relatedTarget)) {
             this.hideDropZone();
@@ -191,12 +191,12 @@ class QRCodeReader {
     handleDrop(e) {
         e.preventDefault();
         e.stopPropagation();
-        
+
         this.hideDropZone();
-        
+
         const files = Array.from(e.dataTransfer.files);
         const imageFile = files.find(file => file.type.startsWith('image/'));
-        
+
         if (imageFile) {
             this.processImage(imageFile);
         } else {
@@ -236,7 +236,7 @@ class QRCodeReader {
 
     async generateQRCode() {
         const text = this.qrInput.value.trim();
-        
+
         if (!text) {
             this.showError('Please enter some text or URL to generate a QR code.');
             return;
@@ -250,13 +250,13 @@ class QRCodeReader {
 
         try {
             this.hideError();
-            
+
             // Create a temporary div for QR code generation
             const tempDiv = document.createElement('div');
             tempDiv.style.position = 'absolute';
             tempDiv.style.left = '-9999px';
             document.body.appendChild(tempDiv);
-            
+
             // Generate QR code using qrcodejs library
             const qr = new QRCode(tempDiv, {
                 text: text,
@@ -266,38 +266,42 @@ class QRCodeReader {
                 colorLight: '#FFFFFF',
                 correctLevel: QRCode.CorrectLevel.H
             });
-            
+
             // Wait a bit for the QR code to render
             setTimeout(() => {
-                // Get the generated image
-                const qrImage = tempDiv.querySelector('img');
-                if (qrImage) {
-                    // Create canvas and draw the QR code with white background and padding
-                    const canvas = this.qrCanvas;
-                    const padding = 32; // 32px padding on each side
-                    const qrSize = 256 - (padding * 2); // QR code size with padding
-                    canvas.width = 256;
-                    canvas.height = 256;
-                    
-                    const ctx = canvas.getContext('2d');
-                    
-                    // Fill with white background
-                    ctx.fillStyle = '#FFFFFF';
-                    ctx.fillRect(0, 0, canvas.width, canvas.height);
-                    
+                // Try to get the generated image or canvas
+                let qrImage = tempDiv.querySelector('img');
+                let qrCanvasElem = tempDiv.querySelector('canvas');
+                const canvas = this.qrCanvas;
+                const padding = 32; // 32px padding on each side
+                const qrSize = 256 - (padding * 2); // QR code size with padding
+                canvas.width = 256;
+                canvas.height = 256;
+
+                const ctx = canvas.getContext('2d');
+
+                // Fill with white background
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                if (qrImage && qrImage.src && qrImage.src.startsWith('data:image')) {
                     // Draw the QR code image with padding
                     ctx.drawImage(qrImage, padding, padding, qrSize, qrSize);
-                    
-                    // Show the preview container
-                    this.qrPreviewContainer.style.display = 'block';
-                    this.qrPreviewContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    
-                    // Clean up
-                    document.body.removeChild(tempDiv);
+                } else if (qrCanvasElem) {
+                    // Draw the QR code canvas with padding
+                    ctx.drawImage(qrCanvasElem, padding, padding, qrSize, qrSize);
                 } else {
                     this.showError('Failed to generate QR code image.');
                     document.body.removeChild(tempDiv);
+                    return;
                 }
+
+                // Show the preview container
+                this.qrPreviewContainer.style.display = 'block';
+                this.qrPreviewContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                // Clean up
+                document.body.removeChild(tempDiv);
             }, 100);
 
         } catch (error) {
@@ -330,17 +334,17 @@ class QRCodeReader {
         try {
             const canvas = this.qrCanvas;
             const base64Data = canvas.toDataURL('image/png');
-            
+
             // Show the base64 display
             this.base64Textarea.value = base64Data;
             this.base64Display.style.display = 'block';
-            
+
             // Copy to clipboard
             await navigator.clipboard.writeText(base64Data);
-            
+
             // Show success feedback
             this.showCopyBase64Success();
-            
+
         } catch (error) {
             console.error('Base64 copy error:', error);
             this.showError('Failed to copy base64 data.');
@@ -356,7 +360,7 @@ class QRCodeReader {
             Copied!
         `;
         this.copyBase64Btn.style.background = '#28a745';
-        
+
         setTimeout(() => {
             this.copyBase64Btn.innerHTML = originalText;
             this.copyBase64Btn.style.background = '#6c757d';
@@ -375,7 +379,7 @@ class QRCodeReader {
 
             // Decode QR code
             const result = await this.decodeQRCode(file);
-            
+
             if (result) {
                 this.displayResult(result);
             } else {
@@ -395,25 +399,25 @@ class QRCodeReader {
             img.onload = () => {
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
-                
+
                 // Set canvas size to image size
                 canvas.width = img.width;
                 canvas.height = img.height;
-                
+
                 // Draw image on canvas
                 ctx.drawImage(img, 0, 0);
-                
+
                 // Get image data
                 const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                
+
                 // Decode QR code using jsQR
                 const code = jsQR(imageData.data, imageData.width, imageData.height, {
                     inversionAttempts: "dontInvert",
                 });
-                
+
                 resolve(code ? code.data : null);
             };
-            
+
             img.onerror = () => resolve(null);
             img.src = URL.createObjectURL(file);
         });
@@ -422,16 +426,16 @@ class QRCodeReader {
     displayResult(content) {
         this.qrContent.textContent = content;
         this.qrContent.classList.add('has-content');
-        
+
         // Hide other sections but don't stop camera if it's already running
         this.cameraSection.style.display = 'none';
         this.generateSection.style.display = 'none';
         this.resultSection.style.display = 'grid';
         this.resultSection.classList.add('success');
-        
+
         // Scroll to result
         this.resultSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        
+
         // Remove success animation after delay
         setTimeout(() => {
             this.resultSection.classList.remove('success');
@@ -441,30 +445,30 @@ class QRCodeReader {
     async startCamera() {
         try {
             this.hideError();
-            this.stream = await navigator.mediaDevices.getUserMedia({ 
-                video: { 
+            this.stream = await navigator.mediaDevices.getUserMedia({
+                video: {
                     facingMode: 'environment',
                     width: { ideal: 1280 },
                     height: { ideal: 720 }
-                } 
+                }
             });
-            
+
             this.cameraVideo.srcObject = this.stream;
-            
+
             // Ensure video element has correct attributes for autoplay
             this.cameraVideo.autoplay = true;
             this.cameraVideo.playsInline = true;
             this.cameraVideo.muted = true; // Required for autoplay in some browsers
-            
+
             // Hide other sections but don't stop camera if it's already running
             this.resultSection.style.display = 'none';
             this.generateSection.style.display = 'none';
             this.cameraSection.style.display = 'block';
             this.isCameraActive = true;
-            
+
             // Start continuous scanning
             this.startContinuousScanning();
-            
+
         } catch (error) {
             console.error('Camera error:', error);
             this.showError('Failed to access camera. Please check permissions and try again.');
@@ -501,21 +505,21 @@ class QRCodeReader {
 
         const canvas = this.cameraCanvas;
         const ctx = canvas.getContext('2d');
-        
+
         canvas.width = this.cameraVideo.videoWidth;
         canvas.height = this.cameraVideo.videoHeight;
-        
+
         ctx.drawImage(this.cameraVideo, 0, 0);
-        
+
         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         const code = jsQR(imageData.data, imageData.width, imageData.height, {
             inversionAttempts: "dontInvert",
         });
-        
+
         if (code) {
             this.stopCamera();
             this.displayResult(code.data);
-            
+
             // Show the captured frame as the original image
             canvas.toBlob((blob) => {
                 const imageUrl = URL.createObjectURL(blob);
@@ -551,7 +555,7 @@ class QRCodeReader {
             Copied!
         `;
         this.copyBtn.style.background = '#28a745';
-        
+
         setTimeout(() => {
             this.copyBtn.innerHTML = originalText;
             this.copyBtn.style.background = '#28a745';
@@ -591,7 +595,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof QRCode === 'undefined') {
         console.warn('QRCode library not loaded. QR generation will not work.');
     }
-    
+
     new QRCodeReader();
 });
 
