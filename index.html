@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>danyg Projects</title>
+  <meta name="description" content="Landing page for danyg web projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="hero">
+      <h1>danyg Project Hub</h1>
+      <p class="subtitle">
+        A quick entry point to current tools and experiments. Pick a project below to jump in.
+      </p>
+    </section>
+
+    <section class="cards" aria-label="Projects">
+      <a class="card card--astrometica" href="./astrometica-calculator/">
+        <p class="eyebrow">Live App</p>
+        <h2>Astrometica Calculator</h2>
+        <p>Open the calculator interface for astrometica values and item planning workflows.</p>
+        <p class="cta">Open project <span aria-hidden="true">&rarr;</span></p>
+      </a>
+
+      <a class="card card--qrcode" href="./qrcode/">
+        <p class="eyebrow">Utility</p>
+        <h2>QR Code Project</h2>
+        <p>Generate and test QR codes in a focused tool designed for quick creation and sharing.</p>
+        <p class="cta">Open project <span aria-hidden="true">&rarr;</span></p>
+      </a>
+    </section>
+
+    <footer>Updated for May 2026.</footer>
+  </main>
+
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+    <span class="theme-toggle__track" aria-hidden="true">
+      <span class="theme-toggle__knob"></span>
+    </span>
+    <span id="themeToggleLabel">Light</span>
+  </button>
+
+  <script>
+    (function () {
+      var storageKey = "landing-theme";
+      var root = document.documentElement;
+      var toggle = document.getElementById("themeToggle");
+      var label = document.getElementById("themeToggleLabel");
+
+      if (!toggle || !label) {
+        return;
+      }
+
+      var stored = localStorage.getItem(storageKey);
+      if (stored === "light") {
+        root.setAttribute("data-theme", "light");
+      }
+
+      function isLightTheme() {
+        return root.getAttribute("data-theme") === "light";
+      }
+
+      function updateToggleState() {
+        var light = isLightTheme();
+        label.textContent = light ? "Dark" : "Light";
+        toggle.setAttribute("aria-label", light ? "Switch to dark theme" : "Switch to light theme");
+        toggle.setAttribute("aria-pressed", light ? "true" : "false");
+      }
+
+      toggle.addEventListener("click", function () {
+        if (isLightTheme()) {
+          root.removeAttribute("data-theme");
+          localStorage.removeItem(storageKey);
+        } else {
+          root.setAttribute("data-theme", "light");
+          localStorage.setItem(storageKey, "light");
+        }
+
+        updateToggleState();
+      });
+
+      updateToggleState();
+    })();
+  </script>
+</body>
+</html>
