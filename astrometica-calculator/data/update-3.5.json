@@ -1,0 +1,3746 @@
+[
+  {
+    "craftable": false,
+    "description": "Celestite is an extremely rare mineral only found in small quantities, and can be used in the fabrication of highly advanced technological items and components.",
+    "id": "celestite",
+    "icon": "Celestite_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Celestite_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Celestite"
+    },
+    "name": "Celestite",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "A resiliant fungus cultivated on floating space islands, valued for its unique properties and adaptability in harsh environments.",
+    "id": "fungu",
+    "icon": "Fungu_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Fungu_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Fungu"
+    },
+    "name": "Fungu",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "A reddish jelly-like substance found in dangerous areas of space. It can be collected and used to craft various items and structures.",
+    "id": "red_celestite",
+    "icon": "Red_Celestite_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Red_Celestite_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Red_Celestite"
+    },
+    "name": "Red Celestite",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "A versatile seed for cultivation in hydroponic planters in order to grow celestite.",
+    "id": "gargaol_seed",
+    "icon": "Gargaol_Seed_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Gargaol_Seed_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Gargaol_Seed"
+    },
+    "name": "Gargaol Seed",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Mankind has been strongly dependent on fibres for all kinds of purposes. They can be used as a component of composite materials, where the orientation of fibers impacts the properties.",
+    "id": "fiber",
+    "icon": "Fiber_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Fiber_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Fiber"
+    },
+    "name": "Fiber",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "A pulsating alien compound harvested from mysterious bulb-like growths. Emits a faint hum and stores high levels of unknown energy. Its purpose remains unclear, but it reacts to certain ancient structures—as if it remembers something.",
+    "id": "luminite",
+    "icon": "Luminite_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Luminite_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Luminite"
+    },
+    "name": "Luminite",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Pyrolite is a volatile crystal formation found deep in molten-rich asteroids that radiates intense heat and pulses with unstable energy — handle with caution. Essential for advanced thermal reactors and plasma-based tech.",
+    "id": "pyrolite",
+    "icon": "Pyrolite_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Pyrolite_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Pyrolite"
+    },
+    "name": "Pyrolite",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "A rare, energy-rich crystal used in advanced tech. Emits strong electromagnetic pulses. Handle with caution.",
+    "id": "volthium",
+    "icon": "Volthium_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Volthium_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Volthium"
+    },
+    "name": "Volthium",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "The Seeker Laser Weapon is a modular laser system for the Seeker vehicle. Effective for asteroid mining or precision target destruction.",
+    "id": "seeker_laser_weapon",
+    "icon": "Seeker_Laser_Weapon_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Seeker_Laser_Weapon_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Seeker_Laser_Weapon"
+    },
+    "name": "Seeker Laser Weapon",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "pyrolite",
+          "amount": 3
+        },
+        {
+          "itemId": "advanced_chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "iridium_bar",
+          "amount": 3
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": false,
+    "description": "Nanite is an exotic mineral used to fabricate advanced nanotechnology-based items and components, and it cannot be found in the Theta-9 region. Nanite ore can be found by hitting Nanite Asteroids 340 times with a Scrapper or by using a Mining Tool. Each Nanite asteroid yields 4 individual Nanite.",
+    "id": "nanite",
+    "icon": "Nanite_(Item).png",
+    "metadata": {
+      "category": "Base Items",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Nanite_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Nanite"
+    },
+    "name": "Nanite",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "| title = Habitat Airlock",
+    "id": "habitat_airlock",
+    "icon": "Habitat_Airlock_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Habitat_Airlock_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Habitat_Airlock"
+    },
+    "name": "Habitat Airlock",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        },
+        {
+          "itemId": "fabric",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Habitat Corridor",
+    "id": "habitat_corridor",
+    "icon": "Habitat_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Habitat_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Habitat_Corridor"
+    },
+    "name": "Habitat Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Half Corridor",
+    "id": "half_corridor",
+    "icon": "Half_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Half_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Half_Corridor"
+    },
+    "name": "Half Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = L Habitat Corridor",
+    "id": "l_habitat_corridor",
+    "icon": "L_Habitat_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:L_Habitat_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/L_Habitat_Corridor"
+    },
+    "name": "L Habitat Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "",
+    "id": "t_habitat_corridor",
+    "icon": "T_Habitat_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:T_Habitat_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/T_Habitat_Corridor"
+    },
+    "name": "T Habitat Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = X Habitat Corridor",
+    "id": "x_habitat_corridor",
+    "icon": "X_Habitat_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:X_Habitat_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/X_Habitat_Corridor"
+    },
+    "name": "X Habitat Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Corridor Staircase",
+    "id": "corridor_staircase",
+    "icon": "Corridor_Staircase_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Corridor_Staircase_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Corridor_Staircase"
+    },
+    "name": "Corridor Staircase",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Normal Vertical Corridor",
+    "id": "normal_vertical_corridor",
+    "icon": "Normal_Vertical_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Normal_Vertical_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Normal_Vertical_Corridor"
+    },
+    "name": "Normal Vertical Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "zero_g_regulator",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = T Vertical Corridor",
+    "id": "t_vertical_corridor",
+    "icon": "T_Vertical_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:T_Vertical_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/T_Vertical_Corridor"
+    },
+    "name": "T Vertical Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "zero_g_regulator",
+          "amount": 1
+        },
+        {
+          "itemId": "gold_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = X Vertical Corridor",
+    "id": "x_vertical_corridor",
+    "icon": "X_Vertical_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:X_Vertical_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/X_Vertical_Corridor"
+    },
+    "name": "X Vertical Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "zero_g_regulator",
+          "amount": 1
+        },
+        {
+          "itemId": "gold_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Habitat Window",
+    "id": "habitat_window",
+    "icon": "Habitat_Window_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Habitat_Window_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Habitat_Window"
+    },
+    "name": "Habitat Window",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "glass",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Habitat Room",
+    "id": "habitat_room",
+    "icon": "Habitat_Room_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Habitat_Room_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Habitat_Room"
+    },
+    "name": "Habitat Room",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Large Habitat Room",
+    "id": "large_habitat_room",
+    "icon": "Large_Habitat_Room_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Large_Habitat_Room_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Large_Habitat_Room"
+    },
+    "name": "Large Habitat Room",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Small Circle Room",
+    "id": "small_circle_room",
+    "icon": "Small_Circle_Room_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Small_Circle_Room_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Small_Circle_Room"
+    },
+    "name": "Small Circle Room",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Vehicle Docking Station",
+    "id": "vehicle_docking_station",
+    "icon": "Vehicle_Docking_Station_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Docking_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Vehicle_Docking_Station"
+    },
+    "name": "Vehicle Docking Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "celestite",
+          "amount": 1
+        },
+        {
+          "itemId": "nickel",
+          "amount": 5
+        },
+        {
+          "itemId": "silver",
+          "amount": 3
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": false,
+    "description": "| title = Corridor Door",
+    "id": "corridor_door",
+    "icon": "Corridor_Door_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Corridor_Door_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Corridor_Door"
+    },
+    "name": "Corridor Door",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "| title = Glass Corridor",
+    "id": "glass_corridor",
+    "icon": "Glass_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Glass_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Glass_Corridor"
+    },
+    "name": "Glass Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "enameled_glass",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Glass L Corridor",
+    "id": "glass_l_corridor",
+    "icon": "Glass_L_Corridor_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Glass_L_Corridor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Glass_L_Corridor"
+    },
+    "name": "Glass L Corridor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 4
+        },
+        {
+          "itemId": "enameled_glass",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Vehicle Station",
+    "id": "vehicle_station",
+    "icon": "Vehicle_Station_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Vehicle_Station"
+    },
+    "name": "Vehicle Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 6
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 6
+        },
+        {
+          "itemId": "chipset",
+          "amount": 2
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Storage Satellite",
+    "id": "storage_satellite",
+    "icon": "Storage_Satellite_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Storage_Satellite_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Storage_Satellite"
+    },
+    "name": "Storage Satellite",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "advanced_chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 10
+        },
+        {
+          "itemId": "blueprint_box",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Ancient Gate Arm",
+    "id": "ancient_gate_arm",
+    "icon": "Ancient_Gate_Arm_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Ancient_Gate_Arm_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Ancient_Gate_Arm"
+    },
+    "name": "Ancient Gate Arm",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "luminite",
+          "amount": 4
+        },
+        {
+          "itemId": "nanite_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Repair Station",
+    "id": "repair_station",
+    "icon": "Repair_Station_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Repair_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Repair_Station"
+    },
+    "name": "Repair Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "resin_canister",
+          "amount": 1
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Charge Station",
+    "id": "charge_station",
+    "icon": "Charge_Station_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Charge_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Charge_Station"
+    },
+    "name": "Charge Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "volthium_spiral",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Global Teleportation Device",
+    "id": "global_teleportation_device",
+    "icon": "Global_Teleportation_Device_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Global_Teleportation_Device_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Global_Teleportation_Device"
+    },
+    "name": "Global Teleportation Device",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "pyrolite",
+          "amount": 3
+        },
+        {
+          "itemId": "volthium",
+          "amount": 3
+        },
+        {
+          "itemId": "celestite",
+          "amount": 3
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Furniture Fabricator",
+    "id": "furniture_fabricator",
+    "icon": "Furniture_Fabricator_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Furniture_Fabricator_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Furniture_Fabricator"
+    },
+    "name": "Furniture Fabricator",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "resin_canister",
+          "amount": 2
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Global Storage",
+    "id": "global_storage",
+    "icon": "Global_Storage_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Global_Storage_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Global_Storage"
+    },
+    "name": "Global Storage",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "volthium",
+          "amount": 2
+        },
+        {
+          "itemId": "nanite_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Storage Remote Device",
+    "id": "storage_remote_device",
+    "icon": "Storage_Remote_Device_(Item).png",
+    "metadata": {
+      "category": "Base Building",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Storage_Remote_Device_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Storage_Remote_Device"
+    },
+    "name": "Storage Remote Device",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "volthium_spiral",
+          "amount": 1
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "\"A cutting-edge device designed to harness the endless potential of mineral deposits. With precision laser technology, it operates",
+    "id": "deposit_miner",
+    "icon": "Deposit_Miner_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Deposit_Miner_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Deposit_Miner"
+    },
+    "name": "Deposit Miner",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "advanced_chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "iridium_bar",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Corridor Solar Panel",
+    "id": "corridor_solar_panel",
+    "icon": "Corridor_Solar_Panel_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Corridor_Solar_Panel_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Corridor_Solar_Panel"
+    },
+    "name": "Corridor Solar Panel",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "glass",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Small Habitat Battery",
+    "id": "small_habitat_battery",
+    "icon": "Small_Habitat_Battery_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Small_Habitat_Battery_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Small_Habitat_Battery"
+    },
+    "name": "Small Habitat Battery",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 2
+        },
+        {
+          "itemId": "silver",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Storage Box",
+    "id": "storage_box",
+    "icon": "Storage_Box_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Storage_Box_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Storage_Box"
+    },
+    "name": "Storage Box",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Wall Storage",
+    "id": "wall_storage",
+    "icon": "Wall_Storage_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Wall_Storage_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Wall_Storage"
+    },
+    "name": "Wall Storage",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Medium Storage",
+    "id": "medium_storage",
+    "icon": "Medium_Storage_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Medium_Storage_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Medium_Storage"
+    },
+    "name": "Medium Storage",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Fabricator",
+    "id": "fabricator",
+    "icon": "Fabricator_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Fabricator_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Fabricator"
+    },
+    "name": "Fabricator",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "silver",
+          "amount": 1
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Beacon",
+    "id": "beacon",
+    "icon": "Beacon_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Beacon_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Beacon"
+    },
+    "name": "Beacon",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Big Habitat Battery",
+    "id": "big_habitat_battery",
+    "icon": "Big_Habitat_Battery_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Big_Habitat_Battery_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Big_Habitat_Battery"
+    },
+    "name": "Big Habitat Battery",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "advanced_chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "fungu",
+          "amount": 3
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Solar Panel Extender",
+    "id": "solar_panel_extender",
+    "icon": "Solar_Panel_Extender_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Solar_Panel_Extender_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Solar_Panel_Extender"
+    },
+    "name": "Solar Panel Extender",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "glass",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Corridor Asteroid Miner",
+    "id": "corridor_asteroid_miner",
+    "icon": "Corridor_Asteroid_Miner_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Corridor_Asteroid_Miner_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Corridor_Asteroid_Miner"
+    },
+    "name": "Corridor Asteroid Miner",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "gold_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "nickel",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Corridor Asteroid Miner T2",
+    "id": "corridor_asteroid_miner_t2",
+    "icon": "Corridor_Asteroid_Miner_T2_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Corridor_Asteroid_Miner_T2_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Corridor_Asteroid_Miner_T2"
+    },
+    "name": "Corridor Asteroid Miner T2",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "gold_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "nickel",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Message Monitor",
+    "id": "message_monitor",
+    "icon": "Message_Monitor_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Message_Monitor_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Message_Monitor"
+    },
+    "name": "Message Monitor",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Wall Photo Displayer",
+    "id": "wall_photo_displayer",
+    "icon": "Wall_Photo_Displayer_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Wall_Photo_Displayer_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Wall_Photo_Displayer"
+    },
+    "name": "Wall Photo Displayer",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "light_bulb",
+          "amount": 2
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = User Terminal",
+    "id": "user_terminal",
+    "icon": "User_Terminal_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:User_Terminal_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/User_Terminal"
+    },
+    "name": "User Terminal",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Power Panel",
+    "id": "power_panel",
+    "icon": "Power_Panel_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Power_Panel_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Power_Panel"
+    },
+    "name": "Power Panel",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Oxygen Station",
+    "id": "oxygen_station",
+    "icon": "Oxygen_Station_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Oxygen_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Oxygen_Station"
+    },
+    "name": "Oxygen Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "fungu",
+          "amount": 5
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "silver",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Research Station",
+    "id": "research_station",
+    "icon": "Research_Station_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Research_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Research_Station"
+    },
+    "name": "Research Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "nickel",
+          "amount": 3
+        },
+        {
+          "itemId": "chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Vehicle Module Fabricator",
+    "id": "vehicle_module_fabricator",
+    "icon": "Vehicle_Module_Fabricator_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Module_Fabricator_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Vehicle_Module_Fabricator"
+    },
+    "name": "Vehicle Module Fabricator",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "silver",
+          "amount": 3
+        },
+        {
+          "itemId": "resin_canister",
+          "amount": 1
+        },
+        {
+          "itemId": "chipset",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Tool Modification",
+    "id": "tool_modification",
+    "icon": "Tool_Modification_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Tool_Modification_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Tool_Modification"
+    },
+    "name": "Tool Modification",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "silver",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Habitat Colorize",
+    "id": "habitat_colorize",
+    "icon": "Habitat_Colorize_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Habitat_Colorize_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Habitat_Colorize"
+    },
+    "name": "Habitat Colorize",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "gold",
+          "amount": 1
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Hydroponic Planter",
+    "id": "hydroponic_planter",
+    "icon": "Hydroponic_Planter_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Hydroponic_Planter_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Hydroponic_Planter"
+    },
+    "name": "Hydroponic Planter",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "fertilizer_pack",
+          "amount": 3
+        },
+        {
+          "itemId": "ice",
+          "amount": 5
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Teleport Station",
+    "id": "teleport_station",
+    "icon": "Teleport_Station_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Teleport_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Teleport_Station"
+    },
+    "name": "Teleport Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "red_celestite",
+          "amount": 3
+        },
+        {
+          "itemId": "blue_crystal",
+          "amount": 3
+        },
+        {
+          "itemId": "advanced_chipset",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Smelter",
+    "id": "smelter",
+    "icon": "Smelter_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Smelter_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Smelter"
+    },
+    "name": "Smelter",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "coal",
+          "amount": 5
+        },
+        {
+          "itemId": "chipset",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Upgrade Station",
+    "id": "upgrade_station",
+    "icon": "Upgrade_Station_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Upgrade_Station_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Upgrade_Station"
+    },
+    "name": "Upgrade Station",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "gold",
+          "amount": 2
+        },
+        {
+          "itemId": "silver",
+          "amount": 2
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Recycle Machine",
+    "id": "recycle_machine",
+    "icon": "Recycle_Machine_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Recycle_Machine_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Recycle_Machine"
+    },
+    "name": "Recycle Machine",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 5
+        },
+        {
+          "itemId": "chipset",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Power Cell Charger",
+    "id": "power_cell_charger",
+    "icon": "Power_Cell_Charger_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Power_Cell_Charger_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Power_Cell_Charger"
+    },
+    "name": "Power Cell Charger",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "nickel",
+          "amount": 1
+        },
+        {
+          "itemId": "blue_crystal",
+          "amount": 2
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Habitat Solar Panel",
+    "id": "habitat_solar_panel",
+    "icon": "Habitat_Solar_Panel_(Item).png",
+    "metadata": {
+      "category": "Advanced",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Habitat_Solar_Panel_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Habitat_Solar_Panel"
+    },
+    "name": "Habitat Solar Panel",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 3
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "glass",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Spacious bag for carrying all of your necessary equipment and supplies.",
+    "id": "backpack",
+    "icon": "Backpack_(Item).png",
+    "metadata": {
+      "category": "Containers",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Backpack_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Backpack"
+    },
+    "name": "Backpack",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        },
+        {
+          "itemId": "silver",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": false,
+    "description": "A Cargo Container (or shipping container) is a container found floating at various locations throughout Astrometica that contain various items.",
+    "id": "cargo_container",
+    "icon": "",
+    "metadata": {
+      "category": "Containers",
+      "iconWikiUrl": "",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Cargo_Container"
+    },
+    "name": "Cargo Container",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "A protective module that absorbs high-speed impact damage during space navigation. Ensuring safe and smooth floating.",
+    "id": "shield_module",
+    "icon": "Shield_Module_(Item).png",
+    "metadata": {
+      "category": "Advanced Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Shield_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Shield_Module"
+    },
+    "name": "Shield Module",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "nickel",
+          "amount": 1
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Sonic Thrusters upgrades the speed of the Survivor's space suit.",
+    "id": "sonic_thrusters",
+    "icon": "Sonic_Thrusters_(Item).png",
+    "metadata": {
+      "category": "Advanced Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Sonic_Thrusters_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Sonic_Thrusters"
+    },
+    "name": "Sonic Thrusters",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "advanced_chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "compacted_coal",
+          "amount": 1
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "__NOTOC__",
+    "id": "zero_g_regulator",
+    "icon": "Zero-G_Regulator_(Item).png",
+    "metadata": {
+      "category": "Advanced Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Zero-G_Regulator_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Zero-G_Regulator"
+    },
+    "name": "Zero-G Regulator",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "silver",
+          "amount": 3
+        },
+        {
+          "itemId": "compacted_coal",
+          "amount": 1
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "__NOTOC__",
+    "id": "orbiter",
+    "icon": "Orbiter_(Item).png",
+    "metadata": {
+      "category": "Advanced Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Orbiter_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Orbiter"
+    },
+    "name": "Orbiter",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 2
+        },
+        {
+          "itemId": "silver",
+          "amount": 1
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "__NOTOC__",
+    "id": "advanced_chipset",
+    "icon": "Advanced_Chipset_(Item).png",
+    "metadata": {
+      "category": "Advanced Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Advanced_Chipset_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Advanced_Chipset"
+    },
+    "name": "Advanced Chipset",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "celestite",
+          "amount": 1
+        },
+        {
+          "itemId": "silver",
+          "amount": 1
+        },
+        {
+          "itemId": "nickel",
+          "amount": 3
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "__NOTOC__",
+    "id": "vehicle_engine",
+    "icon": "Vehicle_Engine_(Item).png",
+    "metadata": {
+      "category": "Advanced Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Engine_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Vehicle_Engine"
+    },
+    "name": "Vehicle Engine",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 5
+        },
+        {
+          "itemId": "gold_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "silver",
+          "amount": 2
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "__NOTOC__",
+    "id": "compacted_carbon",
+    "icon": "Compacted_Carbon_(Item).png",
+    "metadata": {
+      "category": "Advanced Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Compacted_Carbon_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Compacted_Carbon"
+    },
+    "name": "Compacted Carbon",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "carbon",
+          "amount": 15
+        },
+        {
+          "itemId": "iron",
+          "amount": 5
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A versatile tool designed for space miners, the Scrapper is perfect for breaking down packages and depris. In emergency mode, it can even be used to mine asteroids, making it an essential backup for survival in the harsh environment of space.",
+    "id": "scrapper",
+    "icon": "Scrapper_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Scrapper_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Scrapper"
+    },
+    "name": "Scrapper",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron",
+          "amount": 5
+        },
+        {
+          "itemId": "copper",
+          "amount": 3
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A tool for asteroid mining and breaking down mineral deposits.",
+    "id": "mining_tool",
+    "icon": "Mining_Tool_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Mining_Tool_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Mining_Tool"
+    },
+    "name": "Mining Tool",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        },
+        {
+          "itemId": "battery",
+          "amount": 1
+        },
+        {
+          "itemId": "iron",
+          "amount": 2
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "The Flashlight Module is a portable lighting device that illuminates dark areas and enhances visibility in low-light conditions.",
+    "id": "flash_light_module",
+    "icon": "Flash_Light_Module_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Flash_Light_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Flash_Light_Module"
+    },
+    "name": "Flash Light Module",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        },
+        {
+          "itemId": "light_bulb",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "The Oxygen Module is a device that increases the amount of oxygen available in your spacesuit's oxygen capsule.",
+    "id": "oxygen_capsule",
+    "icon": "Oxygen_Capsule_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Oxygen_Capsule_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Oxygen_Capsule"
+    },
+    "name": "Oxygen Capsule",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper_wire",
+          "amount": 2
+        },
+        {
+          "itemId": "quartz",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Fly freely in space with this Jetpack Module.",
+    "id": "jetpack",
+    "icon": "Jetpack_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Jetpack_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Jetpack"
+    },
+    "name": "Jetpack",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron",
+          "amount": 2
+        },
+        {
+          "itemId": "coal",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A durable and practical suit designed for tough environments, providing extra comfort and a boost to your overall health.",
+    "id": "engineer_suit",
+    "icon": "Engineer_Suit_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Engineer_Suit_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Engineer_Suit"
+    },
+    "name": "Engineer Suit",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "fabric",
+          "amount": 5
+        },
+        {
+          "itemId": "chipset",
+          "amount": 2
+        },
+        {
+          "itemId": "resin_canister",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A specialized suit designed to withstand hazardous environments.",
+    "id": "toxic_zone_suit",
+    "icon": "Toxic_Zone_Suit_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Toxic_Zone_Suit_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Toxic_Zone_Suit"
+    },
+    "name": "Toxic Zone Suit",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iridium",
+          "amount": 5
+        },
+        {
+          "itemId": "fabric",
+          "amount": 5
+        },
+        {
+          "itemId": "shield_module",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "An advanced multi-purpose device used to scan the environment and objects. The Scanner Tool helps unlock new blueprints by analyzing materials and can reveal the location of valuable items or asteroids. Making it an essential tool for exploration and resource gathering in space.",
+    "id": "scanner_tool",
+    "icon": "Scanner_Tool_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Scanner_Tool_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Scanner_Tool"
+    },
+    "name": "Scanner Tool",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        },
+        {
+          "itemId": "battery",
+          "amount": 1
+        },
+        {
+          "itemId": "quartz",
+          "amount": 2
+        },
+        {
+          "itemId": "copper",
+          "amount": 3
+        },
+        {
+          "itemId": "iron",
+          "amount": 3
+        }
+      ],
+      "power": 5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "The Builder Tool is used for constructing structures and objects, using resources, blueprints, and creativity.",
+    "id": "builder_tool",
+    "icon": "Builder_Tool_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Builder_Tool_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Builder_Tool"
+    },
+    "name": "Builder Tool",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "battery",
+          "amount": 1
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "The Laser Tool is a handy tool that emits a powerful laser beam, used for cutting through materials, mining resources, and defending against hostile creatures.",
+    "id": "laser_tool",
+    "icon": "Laser_Tool_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Laser_Tool_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Laser_Tool"
+    },
+    "name": "Laser Tool",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "gold_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "battery",
+          "amount": 1
+        },
+        {
+          "itemId": "nickel",
+          "amount": 2
+        },
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Shoots a hook and pulls the player towards the targeted object or surface, allowing them to reach otherwise inaccessible areas.",
+    "id": "hook_tool",
+    "icon": "Hook_Tool_(Item).png",
+    "metadata": {
+      "category": "Equipment",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Hook_Tool_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Hook_Tool"
+    },
+    "name": "Hook Tool",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "sulfur",
+          "amount": 8
+        },
+        {
+          "itemId": "battery",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": false,
+    "description": "A deliciously engineered treat for the weary space traveler, packed with nutrients to keep you going and just the right amount of sweetness to remind you of home.",
+    "id": "space_donut",
+    "icon": "Space_Donut_(Item).png",
+    "metadata": {
+      "category": "Consumables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Space_Donut_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Space_Donut"
+    },
+    "name": "Space Donut",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "Commonly used for carrying drinking water during outdoor activities or in situations where access to clean water is limited.",
+    "id": "water",
+    "icon": "Water_(Item).png",
+    "metadata": {
+      "category": "Consumables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Water_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Water"
+    },
+    "name": "Water",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "ice",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A small device containing a supply of oxygen for breathing.",
+    "id": "oxygen_tank",
+    "icon": "Oxygen_Tank_(Item).png",
+    "metadata": {
+      "category": "Consumables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Oxygen_Tank_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Oxygen_Tank"
+    },
+    "name": "Oxygen Tank",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        },
+        {
+          "itemId": "ice",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Delicious sandwich consisting of a cooked patty of ground beef, lettuce, tomato, and various condiments, served on a bun.",
+    "id": "space_burger",
+    "icon": "Space_Burger_(Item).png",
+    "metadata": {
+      "category": "Consumables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Space_Burger_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Space_Burger"
+    },
+    "name": "Space Burger",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "organic",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": false,
+    "description": "Gargaol Fruit is edible fruit dropped from a Gargaol Tree.",
+    "id": "gargaol_fruit",
+    "icon": "Gargaol_Fruit_(Item).png",
+    "metadata": {
+      "category": "Consumables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Gargaol_Fruit_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Gargaol_Fruit"
+    },
+    "name": "Gargaol Fruit",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "A portable medical device containing essential supplies such as bandages, antiseptic solutions, and pain killers for treating minor injuries and ailments. Can be a lifesaver in emergency situations.",
+    "id": "medkit",
+    "icon": "MedKit_(Item).png",
+    "metadata": {
+      "category": "Consumables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:MedKit_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/MedKit"
+    },
+    "name": "MedKit",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "fabric",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Advanced Fabricator",
+    "id": "advanced_fabricator",
+    "icon": "Advanced_Fabricator_(Item).png",
+    "metadata": {
+      "category": "Machines",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Advanced_Fabricator_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Advanced_Fabricator"
+    },
+    "name": "Advanced Fabricator",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "chipset",
+          "amount": 1
+        },
+        {
+          "itemId": "resin_canister",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Battery Charger",
+    "id": "battery_charger",
+    "icon": "Battery_Charger_(Item).png",
+    "metadata": {
+      "category": "Machines",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Battery_Charger_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Battery_Charger"
+    },
+    "name": "Battery Charger",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Engineer Statue",
+    "id": "engineer_statue",
+    "icon": "Engineer_Statue_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Engineer_Statue_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Engineer_Statue"
+    },
+    "name": "Engineer Statue",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "nickel",
+          "amount": 2
+        },
+        {
+          "itemId": "silver",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Bed Type 1",
+    "id": "bed_type_1",
+    "icon": "Bed_Type_1_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Bed_Type_1_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Bed_Type_1"
+    },
+    "name": "Bed Type 1",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "fabric",
+          "amount": 2
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Bed Type 2",
+    "id": "bed_type_2",
+    "icon": "Bed_Type_2_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Bed_Type_2_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Bed_Type_2"
+    },
+    "name": "Bed Type 2",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "fabric",
+          "amount": 2
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Trash Can",
+    "id": "trash_can",
+    "icon": "Trash_Can_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Trash_Can_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Trash_Can"
+    },
+    "name": "Trash Can",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "coal",
+          "amount": 5
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Small Planter",
+    "id": "small_planter",
+    "icon": "Small_Planter_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Small_Planter_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Small_Planter"
+    },
+    "name": "Small Planter",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "organic",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Rounded Small Planter",
+    "id": "rounded_small_planter",
+    "icon": "Rounded_Small_Planter_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Rounded_Small_Planter_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Rounded_Small_Planter"
+    },
+    "name": "Rounded Small Planter",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "organic",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Corridor Planter",
+    "id": "corridor_planter",
+    "icon": "Corridor_Planter_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Corridor_Planter_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Corridor_Planter"
+    },
+    "name": "Corridor Planter",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        },
+        {
+          "itemId": "organic",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Corridor Planter 2",
+    "id": "corridor_planter_2",
+    "icon": "Corridor_Planter_2_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Corridor_Planter_2_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Corridor_Planter_2"
+    },
+    "name": "Corridor Planter 2",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "organic",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Seatable 1",
+    "id": "seatable_1",
+    "icon": "Seatable_1_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Seatable_1_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Seatable_1"
+    },
+    "name": "Seatable 1",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Seatable 2",
+    "id": "seatable_2",
+    "icon": "Seatable_2_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Seatable_2_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Seatable_2"
+    },
+    "name": "Seatable 2",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Seatable 3",
+    "id": "seatable_3",
+    "icon": "Seatable_3_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Seatable_3_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Seatable_3"
+    },
+    "name": "Seatable 3",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Desk 1",
+    "id": "desk_1",
+    "icon": "Desk_1_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Desk_1_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Desk_1"
+    },
+    "name": "Desk 1",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "organic",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Desk 2",
+    "id": "desk_2",
+    "icon": "Desk_2_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Desk_2_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Desk_2"
+    },
+    "name": "Desk 2",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "organic",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Desk 3",
+    "id": "desk_3",
+    "icon": "Desk_3_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Desk_3_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Desk_3"
+    },
+    "name": "Desk 3",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        },
+        {
+          "itemId": "organic",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Light Beacon",
+    "id": "light_beacon",
+    "icon": "Light_Beacon_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Light_Beacon_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Light_Beacon"
+    },
+    "name": "Light Beacon",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "light_bulb",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Spot Light",
+    "id": "spot_light",
+    "icon": "Spot_Light_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Spot_Light_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Spot_Light"
+    },
+    "name": "Spot Light",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "light_bulb",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "\"Small is relative...\"{{Build Infobox",
+    "id": "small_light",
+    "icon": "Small_Light_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Small_Light_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Small_Light"
+    },
+    "name": "Small Light",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "light_bulb",
+          "amount": 2
+        },
+        {
+          "itemId": "copper_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Mox Statue",
+    "id": "mox_statue",
+    "icon": "Mox_Statue_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Mox_Statue_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Mox_Statue"
+    },
+    "name": "Mox Statue",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "silver",
+          "amount": 2
+        },
+        {
+          "itemId": "nickel",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Moxora Statue",
+    "id": "moxora_statue",
+    "icon": "Moxora_Statue_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Moxora_Statue_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Moxora_Statue"
+    },
+    "name": "Moxora Statue",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "nickel",
+          "amount": 2
+        },
+        {
+          "itemId": "iron",
+          "amount": 5
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "| title = Quick Sign",
+    "id": "quick_sign",
+    "icon": "Quick_Sign_(Item).png",
+    "metadata": {
+      "category": "Decoration",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Quick_Sign_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Quick_Sign"
+    },
+    "name": "Quick Sign",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron_bar",
+          "amount": 2
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A Battery is a portable power source that can be used to power various tools and devices.",
+    "id": "battery",
+    "icon": "Battery_(Item).png",
+    "metadata": {
+      "category": "Power",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Battery_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Battery"
+    },
+    "name": "Battery",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        },
+        {
+          "itemId": "coal",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": false,
+    "description": "The Battery Saver tool module extends tool power lifespan.",
+    "id": "battery_saver",
+    "icon": "Tool_Module_(Item).png",
+    "metadata": {
+      "category": "Power",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Tool_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Battery_Saver"
+    },
+    "name": "Battery Saver",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "A Power Cell is a large energy storage device used for powering structures and vehicles.",
+    "id": "power_cell",
+    "icon": "Power_Cell_(Item).png",
+    "metadata": {
+      "category": "Power",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Power_Cell_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Power_Cell"
+    },
+    "name": "Power Cell",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "battery",
+          "amount": 1
+        },
+        {
+          "itemId": "silver",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": false,
+    "description": "An essential nutrient blend used in hydroponic planters to accelerate fruit growth and maximize yield.",
+    "id": "fertilizer_pack",
+    "icon": "Fertilizer_Pack_(Item).png",
+    "metadata": {
+      "category": "Interactables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Fertilizer_Pack_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Fertilizer_Pack"
+    },
+    "name": "Fertilizer Pack",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "",
+    "id": "blue_light_rod",
+    "icon": "Blue_Light_Rod_(Item).png",
+    "metadata": {
+      "category": "Interactables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Blue_Light_Rod_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Blue_Light_Rod"
+    },
+    "name": "Blue Light Rod",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "Essential source of illumination, the Light Bulb emits a warm and comforting glow. It fits into various fixtures, providing ample brightness to illuminate your surroundings. Its efficient design ensures energy savings while delivering a clear and vibrant light.",
+    "id": "light_bulb",
+    "icon": "Light_Bulb_(Item).png",
+    "metadata": {
+      "category": "Interactables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Light_Bulb_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Light_Bulb"
+    },
+    "name": "Light Bulb",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "quartz",
+          "amount": 1
+        },
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": false,
+    "description": "Resource Packages are bunch of crates that hold a variety of different resource drops, they can be found throught the map often in wrecks on in abandoned stations.",
+    "id": "resource_packages",
+    "icon": "Pre-Mine_Package.png",
+    "metadata": {
+      "category": "Interactables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Pre-Mine_Package.png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Resource_Packages"
+    },
+    "name": "Resource Packages",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "__NOTOC__",
+    "id": "blueprint_box",
+    "icon": "Blueprint_Box_(Item).png",
+    "metadata": {
+      "category": "Interactables",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Blueprint_Box_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Blueprint_Box"
+    },
+    "name": "Blueprint Box",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Iron ore can be found either floating around in space, or by mining Iron Asteroids with either the Scrapper or Mining Tool, or in Iron deposits with a Deposit Miner.",
+    "id": "iron",
+    "icon": "Iron_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Iron_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Iron"
+    },
+    "name": "Iron",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Copper has been a staple of human ingenuity since antiquity. First as simple tools to now where it is a valued ingredient in fabrication and energy wiring. Copper ore is a common mineral and can be found either floating around in space, or by mining Copper Asteroids. Mining the asteroids requires hitting them with a Scrapper 13 times for a small asteroid or 75 times for a large asteroid, or by using the Mining Tool. Each small Copper asteroid yields 3 copper and each large Copper asteroid yields 15 Copper.",
+    "id": "copper",
+    "icon": "Copper_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Copper_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Copper"
+    },
+    "name": "Copper",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Carbon ore was once used as a crude source of energy by burning it. Now by combining it with a few other materials we can create a clean and renewable energy source to fuel engines or power systems. Carbon ore can be found either floating around in space or by mining a carbon asteroid by hitting it 5 times with a Scrapper or by using a Mining Tool. Each carbon asteroid will yield 3 carbon.",
+    "id": "carbon",
+    "icon": "Carbon_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Carbon_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Carbon"
+    },
+    "name": "Carbon",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Gold is a rare and precious resource used as the base of currency for humanity since its discovery. Currently it is used to assist in the fabrication of advanced technology as well as the occasional trade. Gold ore can be found by mining Gold Asteroids with either 35 hits from a Scrapper or by using a Mining Tool. Each asteroid yields 3 individual Gold.",
+    "id": "gold",
+    "icon": "Gold_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Gold_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Gold"
+    },
+    "name": "Gold",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "This semi-precious resource is used to craft high-tech components and advanced technology. Silver ore can be found by mining Silver Asteroids with either 45 hits from a Scrapper or by using a Mining Tool. Each asteroid yields 3 individual silver.",
+    "id": "silver",
+    "icon": "Silver_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Silver_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Silver"
+    },
+    "name": "Silver",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Nickel is a mineral used to fabricate various components and alloys used in space exploration. Nickel ore can be found by mining nickel asteroids with either 25 hits from a Scrapper, using a Mining Tool, or the Seeker Laser Weapon. Each asteroid yields 3 Nickel.",
+    "id": "nickel",
+    "icon": "Nickel_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Nickel_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Nickel"
+    },
+    "name": "Nickel",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "This extremely rare mineral must be handled with care, and can be used in the fabrication of highly advanced technological items and components. Iridium ore can be found by mining Iridium asteroids with a Scrapper hitting them either 50 times for a small asteroid or 150 times for the larger version, or by using a Mining Tool. A small asteroid yields 3 Iridium while the larger version yields 6.",
+    "id": "iridium",
+    "icon": "Iridium_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Iridium_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Iridium"
+    },
+    "name": "Iridium",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Sulfur can currently only be found in a special box located at the Manufacturing Dome which you need to open with a Scrapper.",
+    "id": "sulfur",
+    "icon": "Sulfur_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Sulfur_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Sulfur"
+    },
+    "name": "Sulfur",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "This hard and resilient mineral is often used in electronics and fabrication because of its ability to easily convert energy. Quartz can be found either floating around in individual pieces or sticking out of some of the larger asteroids by mining Quartz Nodes with either 25 hits from a Scrapper or using a Mining Tool. Quartz nodes will yield 3 Quartz.",
+    "id": "quartz",
+    "icon": "Quartz_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Quartz_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Quartz"
+    },
+    "name": "Quartz",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "This resource is your only means of water and should be melted down to ensure survival. Ice can be mined either by hitting it 5 times with a Scrapper or by using a Mining Tool. Each Ice asteroid will yield 5 Ice.",
+    "id": "ice",
+    "icon": "Ice_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Ice_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Ice"
+    },
+    "name": "Ice",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "These Organic packets are your standard issue MRE ( Meal Ready to Eat). They were never really good and most people would rather eat local food then these, as such they can be found scattered throughout the Asteroid Belt",
+    "id": "organic",
+    "icon": "Organic_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Organic_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Organic"
+    },
+    "name": "Organic",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "Fabric is a resource that can be found scattered in Fabric Packages throughout the asteroid field. While they may look comfy there are much better uses for them. Someone, somewhere, is really missing their pillow right now.",
+    "id": "fabric",
+    "icon": "Fabric_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Fabric_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Fabric"
+    },
+    "name": "Fabric",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "fiber",
+          "amount": 3
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": false,
+    "description": "This rare and unique crystal was recently discovered in deep space, and offers fascinating energy enhancing properties. This mineral is currently used in the fabrication of advanced technologies and powerful weapons. Blue Crystals can be found by mining Blue Crystal asteroids with either 50 hits from a Scrapper or by using a Mining Tool. Each asteroid yields 5 individual Blue Crystals.",
+    "id": "blue_crystal",
+    "icon": "Blue_Crystal_(Item).png",
+    "metadata": {
+      "category": "Ores",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Blue_Crystal_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Blue_Crystal"
+    },
+    "name": "Blue Crystal",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "Refined form of copper ore, used to craft electrical components and building materials.",
+    "id": "copper_bar",
+    "icon": "Copper_Bar_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Copper_Bar_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Copper_Bar"
+    },
+    "name": "Copper Bar",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper",
+          "amount": 3
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Refined form of iron ore, used to craft more advanced tools and components in space.",
+    "id": "iron_bar",
+    "icon": "Iron_Bar_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Iron_Bar_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Iron_Bar"
+    },
+    "name": "Iron Bar",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iron",
+          "amount": 3
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Conductive material used in various electronic components.",
+    "id": "copper_wire",
+    "icon": "Copper_Wire_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Copper_Wire_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Copper_Wire"
+    },
+    "name": "Copper Wire",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper",
+          "amount": 1
+        },
+        {
+          "itemId": "iron",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "This part is a crucial component in crafting and repairing advanced technologies, equipment, and structures in the game. It can be found in various locations or obtained by salvaging and dismantling various electronic devices.",
+    "id": "electronic_part",
+    "icon": "Electronic_Part_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Electronic_Part_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Electronic_Part"
+    },
+    "name": "Electronic Part",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper_wire",
+          "amount": 1
+        },
+        {
+          "itemId": "iron",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A device used to transfer and store digital data, allowing players to access and use information at a later time.",
+    "id": "data_transformer",
+    "icon": "Data_Transformer_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Data_Transformer_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Data_Transformer"
+    },
+    "name": "Data Transformer",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "electronic_part",
+          "amount": 1
+        },
+        {
+          "itemId": "quartz",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Used in the construction of windows and other transparent surfaces.",
+    "id": "glass",
+    "icon": "Glass_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Glass_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Glass"
+    },
+    "name": "Glass",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "quartz",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "A Chipset is a tiny electronic component used in crafting advanced technology items.",
+    "id": "chipset",
+    "icon": "Chipset_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Chipset_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Chipset"
+    },
+    "name": "Chipset",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "gold",
+          "amount": 1
+        },
+        {
+          "itemId": "silver",
+          "amount": 2
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Used for printing objects.",
+    "id": "resin_canister",
+    "icon": "Resin_Canister_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Resin_Canister_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Resin_Canister"
+    },
+    "name": "Resin Canister",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        },
+        {
+          "itemId": "celestite",
+          "amount": 1
+        },
+        {
+          "itemId": "iron_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Enameled Glass is a material made from combining glass with enamel, providing increased durability and strength.",
+    "id": "enameled_glass",
+    "icon": "Enameled_Glass_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Enameled_Glass_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Enameled_Glass"
+    },
+    "name": "Enameled Glass",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "glass",
+          "amount": 2
+        },
+        {
+          "itemId": "blue_crystal",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "The Repair Tool Kit is a portable device used for fixing damaged structures and vehicles.",
+    "id": "repair_tool_kit",
+    "icon": "Repair_Tool_Kit_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Repair_Tool_Kit_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Repair_Tool_Kit"
+    },
+    "name": "Repair Tool Kit",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper",
+          "amount": 1
+        },
+        {
+          "itemId": "iron",
+          "amount": 1
+        },
+        {
+          "itemId": "silver",
+          "amount": 1
+        }
+      ],
+      "power": 0.5
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Refined form of Gold Ore, used to craft more advanced tools and components in space.",
+    "id": "gold_bar",
+    "icon": "Gold_Bar_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Gold_Bar_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Gold_Bar"
+    },
+    "name": "Gold Bar",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "copper",
+          "amount": 2
+        }
+      ],
+      "power": 1
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Refined form of Iridium Ore, used to craft advanced propulsion systems and energy shields.",
+    "id": "iridium_bar",
+    "icon": "Iridium_Bar_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Iridium_Bar_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Iridium_Bar"
+    },
+    "name": "Iridium Bar",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "iridium",
+          "amount": 5
+        }
+      ],
+      "power": 1
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Refined form of Nanite Ore, used to craft highly advanced technology and components.",
+    "id": "nanite_bar",
+    "icon": "Nanite_Bar_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Nanite_Bar_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Nanite_Bar"
+    },
+    "name": "Nanite Bar",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "nanite",
+          "amount": 4
+        }
+      ],
+      "power": 1
+    }
+  },
+  {
+    "craftable": false,
+    "description": "A Gargaol Tree is a tree found on various domed locations (usually \"floating islands\") which provide fruit for Survivor sustenance and seeds for cultivation in a Hydroponic Planter.",
+    "id": "gargaol_tree",
+    "icon": "Gargaol_Tree_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Gargaol_Tree_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Gargaol_Tree"
+    },
+    "name": "Gargaol Tree",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "| title = Nanite Power Cell",
+    "id": "nanite_power_cell",
+    "icon": "Nanite_(Item).png",
+    "metadata": {
+      "category": "Resources",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Nanite_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Nanite_Power_Cell"
+    },
+    "name": "Nanite Power Cell",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "power_cell",
+          "amount": 1
+        },
+        {
+          "itemId": "nanite_bar",
+          "amount": 1
+        }
+      ],
+      "power": 0
+    }
+  },
+  {
+    "craftable": false,
+    "description": "Locked Storage is a storage item, similar to a Storage Box, in Astrometica that is electronically locked, requiring a password or code to unlock.",
+    "id": "locked_storage",
+    "icon": "",
+    "metadata": {
+      "category": "Items",
+      "iconWikiUrl": "",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Locked_Storage"
+    },
+    "name": "Locked Storage",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "The Storage Module is a vehicle module that allows for increased storage capacity in the Summon vehicle.",
+    "id": "storage_module",
+    "icon": "Vehicle_Module_(Item).png",
+    "metadata": {
+      "category": "Storage",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Storage_Module"
+    },
+    "name": "Storage Module",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "blue_crystal",
+          "amount": 1
+        },
+        {
+          "itemId": "data_transformer",
+          "amount": 1
+        }
+      ],
+      "power": 25
+    }
+  },
+  {
+    "craftable": false,
+    "description": "Extend the speed of the Hook Tool travel duration.",
+    "id": "hook_move_speed",
+    "icon": "Tool_Module_(Item).png",
+    "metadata": {
+      "category": "Tool Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Tool_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Hook_Move_Speed"
+    },
+    "name": "Hook Move Speed",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Hook Throw Distance is a tool modification that extends the throw distance of the Hook Tool.",
+    "id": "hook_throw_distance",
+    "icon": "Tool_Module_(Item).png",
+    "metadata": {
+      "category": "Tool Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Tool_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Hook_Throw_Distance"
+    },
+    "name": "Hook Throw Distance",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Enhance your mining capabilities with Mining Power +. This tool modification empowers your mining tool, allowing you to extract valuable resources more efficiently from asteroids.",
+    "id": "mining_power",
+    "icon": "Tool_Module_(Item).png",
+    "metadata": {
+      "category": "Tool Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Tool_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Mining_Power"
+    },
+    "name": "Mining Power",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Boost your mining prowess with this Mining Power modification",
+    "id": "mining_speed",
+    "icon": "Tool_Module_(Item).png",
+    "metadata": {
+      "category": "Tool Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Tool_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Mining_Speed"
+    },
+    "name": "Mining Speed",
+    "recipe": null
+  },
+  {
+    "craftable": false,
+    "description": "Extend scan distance for the Scanner Tool",
+    "id": "scan_distance",
+    "icon": "Tool_Module_(Item).png",
+    "metadata": {
+      "category": "Tool Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Tool_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Scan_Distance"
+    },
+    "name": "Scan Distance",
+    "recipe": null
+  },
+  {
+    "craftable": true,
+    "description": "Increases the maximum health of the Summon Vehicle",
+    "id": "summon_health_upgrade",
+    "icon": "Vehicle_Module_(Item).png",
+    "metadata": {
+      "category": "Vehicle Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Summon_Health_Upgrade"
+    },
+    "name": "Summon Health Upgrade",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "blue_crystal",
+          "amount": 1
+        },
+        {
+          "itemId": "fabric",
+          "amount": 3
+        }
+      ],
+      "power": 25
+    }
+  },
+  {
+    "craftable": true,
+    "description": "An upgrade module for the Summon Vehicle that increases its maximum speed, allowing for faster travel and improved maneuverability in space.",
+    "id": "summon_speed_module",
+    "icon": "Vehicle_Module_(Item).png",
+    "metadata": {
+      "category": "Vehicle Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Summon_Speed_Module"
+    },
+    "name": "Summon Speed Module",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "vehicle_engine",
+          "amount": 1
+        },
+        {
+          "itemId": "gold",
+          "amount": 3
+        },
+        {
+          "itemId": "nickel",
+          "amount": 1
+        }
+      ],
+      "power": 25
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Allows Summon vehicle to use Warp Gates.",
+    "id": "warp_module",
+    "icon": "Vehicle_Module_(Item).png",
+    "metadata": {
+      "category": "Vehicle Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Warp_Module"
+    },
+    "name": "Warp Module",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "advanced_chipset",
+          "amount": 2
+        },
+        {
+          "itemId": "zero_g_regulator",
+          "amount": 5
+        },
+        {
+          "itemId": "blue_crystal",
+          "amount": 5
+        }
+      ],
+      "power": 25
+    }
+  },
+  {
+    "craftable": true,
+    "description": "Provides a boost of speed to the Summon Vehicle",
+    "id": "summon_boost_module",
+    "icon": "Vehicle_Module_(Item).png",
+    "metadata": {
+      "category": "Vehicle Modules",
+      "iconWikiUrl": "https://astrometica.wiki.gg/wiki/File:Vehicle_Module_(Item).png",
+      "wikiLink": "https://astrometica.wiki.gg/wiki/Summon_Boost_Module"
+    },
+    "name": "Summon Boost Module",
+    "recipe": {
+      "ingredients": [
+        {
+          "itemId": "fungu",
+          "amount": 1
+        },
+        {
+          "itemId": "nickel",
+          "amount": 4
+        },
+        {
+          "itemId": "advanced_chipset",
+          "amount": 1
+        }
+      ],
+      "power": 25
+    }
+  }
+]
