@@ -1,7 +1,7 @@
 {
   "name": "Daniel Goberitz",
   "birthDate": "21 Nov 1986",
-  "photo": "../daniel.jpg",
+  "photo": "daniel.jpg",
   "location": { "en": "Sallent, Barcelona, Spain", "es": "Sallent, Barcelona, España" },
   "citizenship": { "en": "Spaniard, Argentinian", "es": "Español, Argentino" },
   "links": {
