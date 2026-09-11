@@ -88,6 +88,7 @@ html[data-theme="light"] .chip { background: #edf0e9; color: #17221f; border-col
 .timeline li:last-child { padding-bottom: 0; border-left-color: transparent; }
 .timeline li::before { position: absolute; left: -5px; top: 3px; width: 9px; height: 9px; background: var(--accent); border-radius: 50%; content: ""; }
 .timeline__date { color: var(--muted); font-size: 12px; }
+.timeline__duration { white-space: nowrap; font-style: italic; }
 .timeline__company { font: 700 15px "Space Grotesk", sans-serif; }
 .timeline__role { color: var(--accent-dark); font-size: 13px; }
 .project + .project { margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line); }
@@ -139,14 +140,16 @@ html[data-theme="light"] .chip { background: #edf0e9; color: #17221f; border-col
   .hero { width: calc(100% - 4px); box-shadow: none; break-inside: avoid; }
   .cv-grid { display: grid; width: calc(100% - 4px); grid-template-columns: minmax(0, 1.45fr) minmax(220px, .8fr); gap: 8px; }
   .column { display: grid; gap: 8px; align-content: start; }
-  .panel { break-inside: avoid; box-shadow: none; border-width: 0.5pt; margin-bottom: 8px; padding: 20px; }
+  .panel { break-inside: avoid-page; box-shadow: none; border-width: 0.5pt; margin-bottom: 8px; padding: 20px; }
   .panel--projects, .panel--work-history { break-inside: auto; }
-  .panel--projects .project { break-inside: avoid; }
-  .panel--work-history .timeline li { break-inside: avoid; }
+  .panel--projects .project { break-inside: auto; }
+  .panel--work-history .timeline li { break-inside: auto; }
   .cv-grid { margin-top: 8px; }
   a { text-decoration: none; }
   html[data-theme="dark"] .chip { background: #edf0e9; color: #17221f; border-color: #d9ddd6; }
   .footer-note { display: none; }
 
   .panel-about {max-height: 185pt; overflow: hidden;}
+  .panel-work-history {break-inside: avoid;}
+  .chip { break-inside: avoid; }
 }

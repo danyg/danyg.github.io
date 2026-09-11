@@ -5,6 +5,30 @@
   const text = (value) => typeof value === "string" ? value : value[state.language];
   const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[character]));
   const sectionHeading = (en, es, eyebrow) => `<div class="panel__heading"><h2>${state.language === "en" ? en : es}</h2><span>${eyebrow || ""}</span></div>`;
+  const monthNumbers = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+
+  function parseMonth(value) {
+    const match = typeof value === "string" && value.match(/^([A-Za-z]{3})\s+(\d{4})$/);
+    if (!match || monthNumbers[match[1]] === undefined) return null;
+    return { month: monthNumbers[match[1]], year: Number(match[2]) };
+  }
+
+  function durationLabel(job) {
+    const start = parseMonth(job.start);
+    const endValue = typeof job.end === "string" ? job.end : text(job.end);
+    const end = endValue === "Present" || endValue === "Actualidad"
+      ? { month: new Date().getMonth(), year: new Date().getFullYear() }
+      : parseMonth(endValue);
+    if (!start || !end) return "";
+
+    const totalMonths = Math.max(0, (end.year - start.year) * 12 + end.month - start.month);
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+    const parts = [];
+    if (years) parts.push(`${years}${state.language === "en" ? "y" : "a"}`);
+    if (months) parts.push(`${months}m`);
+    return `(${parts.join(" ") || "0m"})`;
+  }
 
   function applyTheme() {
     const isDark = state.theme === "dark";
@@ -35,7 +59,7 @@
     document.querySelector("[data-copy=print]").textContent = state.language === "en" ? "Print / PDF" : "Imprimir / PDF";
 
     const skills = data.skills.map((skill) => `<li><strong>${escapeHtml(skill.name)}</strong>${skill.detail ? `<small>${escapeHtml(text(skill.detail))}</small>` : ""}${skill.since ? `<small> · ${state.language === "en" ? "since" : "desde"} ${skill.since}</small>` : ""}${skill.years ? `<small> · ${skill.years}</small>` : ""}</li>`).join("");
-    const jobs = data.jobs.map((job) => `<li>${job.start || job.end ? `<div class="timeline__date">${escapeHtml(job.start || "")}<br />${escapeHtml(job.end ? text(job.end) : "")}</div>` : ""}<div><div class="timeline__company">${job.country ? `<span class="flag">${escapeHtml(job.country)}</span>` : ""}${escapeHtml(job.company)}</div><div class="timeline__role">${escapeHtml(job.role)}</div></div></li>`).join("");
+    const jobs = data.jobs.map((job) => `<li>${job.start || job.end ? `<div class="timeline__date">${escapeHtml(job.end ? text(job.end) : "")}<br />${escapeHtml(job.start || "")} <span class="timeline__duration">${escapeHtml(durationLabel(job))}</span></div>` : ""}<div><div class="timeline__company">${job.country ? `<span class="flag">${escapeHtml(job.country)}</span>` : ""}${escapeHtml(job.company)}</div><div class="timeline__role">${escapeHtml(job.role)}</div></div></li>`).join("");
     const projects = data.projects.map((project) => `<article class="project"><h3>${escapeHtml(text(project.title))}</h3><div class="project__date">${escapeHtml(project.date)}</div><p>${escapeHtml(text(project.description))}</p><div class="chips">${project.tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div></article>`).join("");
     const languages = data.languages.map((language) => `<div class="language-row"><span class="flag">${language.flag}</span><div><strong>${escapeHtml(text(language.name))}</strong><br /><span>${escapeHtml(text(language.level))}</span></div></div>`).join("");
 
