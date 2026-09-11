@@ -38,17 +38,21 @@ h1 { margin: 10px 0 8px; font-size: clamp(2.7rem, 6vw, 5.7rem); letter-spacing: 
 .contact-list a { color: #f9f7f0; text-decoration: none; overflow-wrap: anywhere; }
 .contact-list i { width: 20px; margin-right: 9px; color: var(--yellow); text-align: center; }
 .cv-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, .8fr); gap: 24px; margin-top: 24px; }
-.column { display: grid; gap: 24px; align-content: start; }
-.panel { padding: 28px; background: var(--card); border: 1px solid var(--line); }
+.column { display: grid; gap: 24px; align-content: start; min-width: 0; }
+.panel { min-width: 0; padding: 28px; background: var(--card); border: 1px solid var(--line); }
 .panel--accent { background: var(--sage); border-color: transparent; }
 .panel__heading { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; margin: 0 0 20px; }
+.panel__heading > * { min-width: 0; overflow-wrap: anywhere; }
 .panel__heading h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.025em; }
 .panel__heading span { color: var(--accent-dark); font: 700 11px/1 "Space Grotesk", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.column:last-child .panel__heading span { display: none; }
+.panel dd { margin: 0; }
 .about { font-size: 17px; line-height: 1.75; max-width: 70ch; }
 .meta-list { display: grid; gap: 14px; margin: 0; }
-.meta-list div { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: start; }
-.meta-list dt { color: var(--accent); font-size: 18px; text-align: center; }
 .meta-list dd { margin: 0; }
+.meta-list div { display: block; }
+.meta-list dt { display: none; }
+.meta-list dd { min-width: 0; overflow-wrap: anywhere; }
 .meta-list strong { display: block; font-family: "Space Grotesk", sans-serif; }
 .skill-list { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; }
 .skill-list li { padding-left: 18px; border-left: 3px solid var(--yellow); }
@@ -94,10 +98,10 @@ h1 { margin: 10px 0 8px; font-size: clamp(2.7rem, 6vw, 5.7rem); letter-spacing: 
   body { font-size: 10.5pt; }
   .toolbar { display: none; }
   .cv-shell { max-width: none; margin: 0; padding: 0; }
-  .hero { box-shadow: none; break-inside: avoid; }
-  .cv-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(220px, .8fr); gap: 8px; }
+  .hero { width: calc(100% - 4px); box-shadow: none; break-inside: avoid; }
+  .cv-grid { display: grid; width: calc(100% - 4px); grid-template-columns: minmax(0, 1.45fr) minmax(220px, .8fr); gap: 8px; }
   .column { display: grid; gap: 8px; align-content: start; }
-  .panel { break-inside: avoid; box-shadow: none; margin-bottom: 8px; padding: 20px; }
+  .panel { break-inside: avoid; box-shadow: none; border-width: 0.5pt; margin-bottom: 8px; padding: 20px; }
   .panel--projects, .panel--work-history { break-inside: auto; }
   .panel--projects .project { break-inside: avoid; }
   .panel--work-history .timeline li { break-inside: avoid; }
