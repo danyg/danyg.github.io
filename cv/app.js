@@ -1,10 +1,22 @@
 (function () {
   const CONTACT_KEYS = { phone: "cv.phone", email: "cv.email" };
-  const state = { language: localStorage.getItem("cv.language") || "en", data: null };
+  const state = { language: localStorage.getItem("cv.language") || "en", theme: localStorage.getItem("cv.theme") || "dark", data: null };
 
   const text = (value) => typeof value === "string" ? value : value[state.language];
   const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[character]));
   const sectionHeading = (en, es, eyebrow) => `<div class="panel__heading"><h2>${state.language === "en" ? en : es}</h2><span>${eyebrow || ""}</span></div>`;
+
+  function applyTheme() {
+    const isDark = state.theme === "dark";
+    document.documentElement.dataset.theme = state.theme;
+    const button = document.querySelector("#theme-button");
+    if (!button) return;
+    button.setAttribute("aria-pressed", String(isDark));
+    button.querySelector("i").className = isDark ? "fas fa-sun" : "fas fa-moon";
+    button.querySelector("[data-copy=theme]").textContent = state.language === "en"
+      ? (isDark ? "Light mode" : "Dark mode")
+      : (isDark ? "Modo claro" : "Modo oscuro");
+  }
 
   function contactMarkup() {
     const phone = localStorage.getItem(CONTACT_KEYS.phone);
@@ -18,6 +30,7 @@
   function render(data) {
     state.data = data;
     document.documentElement.lang = state.language;
+    applyTheme();
     document.querySelectorAll(".language-button").forEach((button) => button.classList.toggle("is-active", button.dataset.language === state.language));
     document.querySelector("[data-copy=print]").textContent = state.language === "en" ? "Print / PDF" : "Imprimir / PDF";
 
@@ -67,8 +80,14 @@
   document.addEventListener("click", (event) => {
     const language = event.target.closest("[data-language]")?.dataset.language;
     if (language) { state.language = language; localStorage.setItem("cv.language", language); render(state.data); }
+    if (event.target.closest("#theme-button")) {
+      state.theme = state.theme === "dark" ? "light" : "dark";
+      localStorage.setItem("cv.theme", state.theme);
+      applyTheme();
+    }
     if (event.target.closest("#print-button")) window.print();
   });
 
+  applyTheme();
   fetch("data.json").then((response) => response.json()).then(render).catch(() => { document.querySelector("#cv").innerHTML = "<p class=\"loading\">Unable to load CV data.</p>"; });
 })();
