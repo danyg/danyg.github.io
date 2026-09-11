@@ -82,6 +82,7 @@ h1 { margin: 10px 0 8px; font-size: clamp(2.7rem, 6vw, 5.7rem); letter-spacing: 
 .chips { display: flex; flex-wrap: wrap; gap: 7px; }
 .chip { padding: 5px 9px; background: #edf0e9; border: 1px solid var(--line); font-size: 12px; }
 html[data-theme="dark"] .chip { background: #1b2a35; color: var(--ink); border-color: #30424f; }
+html[data-theme="light"] .chip { background: #edf0e9; color: #17221f; border-color: #d9ddd6; }
 .timeline { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
 .timeline li { position: relative; display: grid; grid-template-columns: 105px 1fr; gap: 18px; padding: 0 0 20px 23px; border-left: 1px solid #bbc8bd; }
 .timeline li:last-child { padding-bottom: 0; border-left-color: transparent; }
@@ -144,5 +145,8 @@ html[data-theme="dark"] .chip { background: #1b2a35; color: var(--ink); border-c
   .panel--work-history .timeline li { break-inside: avoid; }
   .cv-grid { margin-top: 8px; }
   a { text-decoration: none; }
+  html[data-theme="dark"] .chip { background: #edf0e9; color: #17221f; border-color: #d9ddd6; }
   .footer-note { display: none; }
+
+  .panel-about {max-height: 185pt; overflow: hidden;}
 }

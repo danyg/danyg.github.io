@@ -6,7 +6,9 @@
   "citizenship": { "en": "Spaniard, Argentinian", "es": "Español, Argentino" },
   "links": {
     "linkedin": "https://www.linkedin.com/in/daniel-goberitz",
-    "github": "https://github.com/danyg/"
+    "linkedinLabel": "@daniel-goberitz",
+    "github": "https://github.com/danyg/",
+    "githubLabel": "@danyg"
   },
   "about": {
     "en": "Self-taught and passionate about software quality, Clean Code, software architecture, and agile methodologies. I focus on practices that add value, sustainability, and flexibility to the code, allowing it to fulfil business requirements and avoid the phenomenon known as The Big Ball of Mud and code rot.",

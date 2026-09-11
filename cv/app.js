@@ -43,20 +43,20 @@
       <header class="hero">
         <img class="hero__photo" src="${escapeHtml(data.photo)}" alt="Daniel Goberitz" />
         <div><div class="eyebrow">${state.language === "en" ? "Software developer" : "Desarrollador de software"}</div><h1>${escapeHtml(data.name)}</h1><p class="hero__subtitle">${state.language === "en" ? "Quality-minded full-stack and frontend developer" : "Desarrollador full-stack y frontend orientado a la calidad"}</p></div>
-        <div class="hero__contact contact-list"><a href="https://www.linkedin.com/in/daniel-goberitz" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a><a href="${escapeHtml(data.links.github)}" target="_blank"><i class="fab fa-github"></i>GitHub</a>${contactMarkup()}</div>
+        <div class="hero__contact contact-list"><a href="${escapeHtml(data.links.linkedin)}" target="_blank"><i class="fab fa-linkedin"></i>${escapeHtml(data.links.linkedinLabel)}</a><a href="${escapeHtml(data.links.github)}" target="_blank"><i class="fab fa-github"></i>${escapeHtml(data.links.githubLabel)}</a>${contactMarkup()}</div>
       </header>
       <div class="cv-grid">
         <div class="column">
-          <section class="panel panel--accent"><div class="about">${escapeHtml(text(data.about))}</div></section>
-          <section class="panel panel--projects"><div>${sectionHeading("Significant projects", "Proyectos destacados", "Selected work")}</div>${projects}</section>
-          <section class="panel panel--work-history"><div>${sectionHeading("Work history", "Historial profesional", ">20 years")}</div><ul class="timeline">${jobs}</ul></section>
+          <section class="panel panel--accent panel-about"><div class="about">${escapeHtml(text(data.about))}</div></section>
+          <section class="panel panel--projects panel-projects"><div>${sectionHeading("Significant projects", "Proyectos destacados", "Selected work")}</div>${projects}</section>
+          <section class="panel panel--work-history panel-work-history"><div>${sectionHeading("Work history", "Historial profesional", ">20 years")}</div><ul class="timeline">${jobs}</ul></section>
         </div>
         <aside class="column">
-          <section class="panel"><div>${sectionHeading("Profile", "Perfil", "Details")}</div><dl class="meta-list"><div><dt><i class="fas fa-calendar"></i></dt><dd><strong>${state.language === "en" ? "Date of birth" : "Fecha de nacimiento"}</strong>${escapeHtml(data.birthDate)}</dd></div><div><dt><i class="fas fa-id-card"></i></dt><dd><strong>${state.language === "en" ? "Citizenship" : "Ciudadanía"}</strong>${escapeHtml(text(data.citizenship))}</dd></div><div><dt><i class="fas fa-map-marker-alt"></i></dt><dd><strong>${state.language === "en" ? "Residence" : "Residencia"}</strong>${escapeHtml(text(data.location))}</dd></div></dl></section>
-          <section class="panel"><div>${sectionHeading("Studies", "Estudios", "Education")}</div><p><strong>${escapeHtml(text(data.education.title))}</strong><br />${escapeHtml(text(data.education.description))}<br />${escapeHtml(data.education.school)}</p></section>
-          <section class="panel"><div>${sectionHeading("Languages", "Idiomas", "Communication")}</div>${languages}</section>
-          <section class="panel"><div>${sectionHeading("Knowledge", "Conocimientos", "Toolkit")}</div><ul class="skill-list">${skills}</ul><hr /><div class="chips">${data.also.map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div></section>
-          <section class="panel panel--accent"><div>${sectionHeading("Hobbies", "Aficiones", "Off-screen")}</div><p>${escapeHtml(text(data.hobbies))}</p></section>
+          <section class="panel panel-profile"><div>${sectionHeading("Profile", "Perfil", "Details")}</div><dl class="meta-list"><div><dt><i class="fas fa-calendar"></i></dt><dd><strong>${state.language === "en" ? "Date of birth" : "Fecha de nacimiento"}</strong>${escapeHtml(data.birthDate)}</dd></div><div><dt><i class="fas fa-id-card"></i></dt><dd><strong>${state.language === "en" ? "Citizenship" : "Ciudadanía"}</strong>${escapeHtml(text(data.citizenship))}</dd></div><div><dt><i class="fas fa-map-marker-alt"></i></dt><dd><strong>${state.language === "en" ? "Residence" : "Residencia"}</strong>${escapeHtml(text(data.location))}</dd></div></dl></section>
+          <section class="panel panel-studies"><div>${sectionHeading("Studies", "Estudios", "Education")}</div><p><strong>${escapeHtml(text(data.education.title))}</strong><br />${escapeHtml(text(data.education.description))}<br />${escapeHtml(data.education.school)}</p></section>
+          <section class="panel panel-languages"><div>${sectionHeading("Languages", "Idiomas", "Communication")}</div>${languages}</section>
+          <section class="panel panel-knowledge"><div>${sectionHeading("Knowledge", "Conocimientos", "Toolkit")}</div><ul class="skill-list">${skills}</ul><hr /><div class="chips">${data.also.map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div></section>
+          <section class="panel panel--accent panel-hobbies"><div>${sectionHeading("Hobbies", "Aficiones", "Off-screen")}</div><p>${escapeHtml(text(data.hobbies))}</p></section>
         </aside>
       </div>
       <p class="footer-note">${state.language === "en" ? "Updated September 2026 · Private contact details are stored only in this browser" : "Actualizado en septiembre de 2026 · Los datos de contacto privados solo se guardan en este navegador"}</p>`;
