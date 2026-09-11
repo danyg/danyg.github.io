@@ -17,19 +17,19 @@
 }
 
 html[data-theme="dark"] {
-  --ink: #e8eee9;
-  --muted: #aabbb1;
-  --paper: #111715;
-  --card: #1b2421;
-  --line: #35433d;
-  --accent: #ef7957;
-  --accent-dark: #ff9b7d;
-  --sage: #26382f;
-  --yellow: #e7c766;
-  --shadow: 0 22px 60px rgba(0, 0, 0, .28);
-  --hero: #202d28;
-  --flag-background: #3b4b43;
-  --flag-text: #f4f7f2;
+  --ink: #e5edf2;
+  --muted: #9aabb8;
+  --paper: #0f171d;
+  --card: #16222b;
+  --line: #30424f;
+  --accent: #f05d23;
+  --accent-dark: #f0b429;
+  --sage: #1a2933;
+  --yellow: #f0b429;
+  --shadow: 0 22px 60px rgba(0, 0, 0, .35);
+  --hero: #1a2933;
+  --flag-background: #0d6e6e;
+  --flag-text: #e5edf2;
 }
 
 * { box-sizing: border-box; }
@@ -81,7 +81,7 @@ h1 { margin: 10px 0 8px; font-size: clamp(2.7rem, 6vw, 5.7rem); letter-spacing: 
 .skill-list small { color: var(--muted); }
 .chips { display: flex; flex-wrap: wrap; gap: 7px; }
 .chip { padding: 5px 9px; background: #edf0e9; border: 1px solid var(--line); font-size: 12px; }
-html[data-theme="dark"] .chip { background: #2d3a34; color: var(--ink); border-color: #52635a; }
+html[data-theme="dark"] .chip { background: #1b2a35; color: var(--ink); border-color: #30424f; }
 .timeline { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
 .timeline li { position: relative; display: grid; grid-template-columns: 105px 1fr; gap: 18px; padding: 0 0 20px 23px; border-left: 1px solid #bbc8bd; }
 .timeline li:last-child { padding-bottom: 0; border-left-color: transparent; }
