@@ -1,0 +1,92 @@
+{
+  "name": "Daniel Goberitz",
+  "birthDate": "21 Nov 1986",
+  "photo": "../daniel.jpg",
+  "location": { "en": "Sallent, Barcelona, Spain", "es": "Sallent, Barcelona, España" },
+  "citizenship": { "en": "Spaniard, Argentinian", "es": "Español, Argentino" },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/daniel-goberitz",
+    "github": "https://github.com/danyg/"
+  },
+  "about": {
+    "en": "Self-taught and passionate about software quality, Clean Code, software architecture, and agile methodologies. I focus on practices that add value, sustainability, and flexibility to the code, allowing it to fulfil business requirements and avoid the phenomenon known as The Big Ball of Mud and code rot.",
+    "es": "Autodidacta y apasionado por la calidad del software, el Clean Code, la arquitectura de software y las metodologías ágiles. Me centro en prácticas que aportan valor, sostenibilidad y flexibilidad al código, permitiendo cumplir los requisitos del negocio y evitar el fenómeno conocido como The Big Ball of Mud y la degradación del código."
+  },
+  "education": {
+    "title": { "en": "Technical Diploma", "es": "Título técnico" },
+    "description": { "en": "Electronics Technician with a specialization in Telecommunications", "es": "Técnico electrónico con orientación en Telecomunicaciones" },
+    "school": "Technical School No. 1 Otto Krause, Buenos Aires, Argentina"
+  },
+  "languages": [
+    { "name": { "en": "Spanish", "es": "Español" }, "level": { "en": "Native", "es": "Lengua materna" }, "flag": "ES" },
+    { "name": { "en": "English", "es": "Inglés" }, "level": { "en": "Fluent", "es": "Fluido" }, "flag": "GB" }
+  ],
+  "skills": [
+    { "name": "Cursor, Claude", "detail": { "en": "Working 100% with AI code generation since 2025", "es": "Trabajando al 100% con generación de código mediante IA desde 2025" } },
+    { "name": "JavaScript", "since": "2006" },
+    { "name": "TypeScript", "since": "2017" },
+    { "name": "Java 1.6, Java 8, Spring 3 and 4, unit testing (Mockito/JUnit 5), Maven plugin development", "years": "2014-2019" },
+    { "name": "React, Redux, Sagas, Thunk", "detail": { "en": "Using Redux as a CQRS bus", "es": "Usando Redux como bus CQRS" }, "since": "2017" },
+    { "name": "TDD", "detail": { "en": "Big fan, not pushy about it", "es": "Gran fan, pero no pesado al respecto" }, "since": "2016" },
+    { "name": "Jest, React Testing Library, Playwright, Cypress" },
+    { "name": "Frontend unit testing", "detail": { "en": "Several years of experience, including teaching", "es": "Varios años de experiencia, incluida la docencia" }, "since": "2016" },
+    { "name": "Node.js", "detail": { "en": "Very familiar with Express, Koa, Socket.IO, the MongoDB driver, and more", "es": "Muy familiarizado con Express, Koa, Socket.IO, el driver de MongoDB y más" }, "since": "2011" },
+    { "name": "CSS and HTML", "since": "2006" },
+    { "name": "Docker, Linux and Bash scripts", "detail": { "en": "User and intermediate system administrator level", "es": "Nivel de usuario y de administrador de sistemas intermedio" } },
+    { "name": "Selenium and Cucumber", "detail": { "en": "JVM and JS/TS implementations", "es": "Implementaciones para JVM y JS/TS" }, "since": "2014" },
+    { "name": "Python 3", "detail": { "en": "With TDD", "es": "Aplicando TDD" } }
+  ],
+  "also": ["VSCode and VSCode Extension Development", "IntelliJ", "C#", "macOS", "Windows", "x86 Assembly", "SQL for MySQL and Oracle", "Photoshop", "jQuery", "C", "C++", "Unraid", "MongoDB", "Kubernetes", "AWS", "Azure"],
+  "hobbies": { "en": "Motorcycling, making, electronics, Pilates, and gaming", "es": "Motociclismo, bricolaje, electrónica, pilates y videojuegos" },
+  "jobs": [
+    { "company": "Treatwell", "role": "Senior Frontend Software Engineer", "start": "Oct 2022", "end": { "en": "Present", "es": "Actualidad" }, "country": "ES" },
+    { "company": "ContractBook", "role": "Full Stack Developer", "start": "Feb 2022", "end": "Jul 2022", "country": "ES" },
+    { "company": "Smartblocks", "role": "Senior Full Stack Engineer", "start": "Oct 2020", "end": "Jan 2022", "country": "ES" },
+    { "company": "Merkle Inc", "role": "Full Stack Developer", "start": "Feb 2020", "end": "Sep 2020", "country": "ES" },
+    { "company": "Axa Holding / K-Lagan Consulting", "role": "Tech Lead", "start": "Mar 2019", "end": "Oct 2019", "country": "ES" },
+    { "company": "Comet Global Consulting / Merkle Inc", "role": "Dev Lead", "start": "Oct 2013", "end": "Feb 2019", "country": "ES" },
+    { "company": "Lavinia Interactiva", "role": "Senior Developer", "start": "Mar 2011", "end": "May 2013", "country": "ES" },
+    { "company": "El Sentido Software S.L.", "role": "Senior Developer", "start": "Oct 2008", "end": "Feb 2011", "country": "ES" },
+    { "company": "Bassobroveli", "role": "Semi-Senior Developer", "start": "Apr 2008", "end": "Jul 2008", "country": "AR" },
+    { "company": "451°", "role": "Junior / Semi-Senior Developer", "start": "Jun 2006", "end": "Apr 2008", "country": "AR" },
+    { "company": "HandsSolutions", "role": "Junior Developer", "start": "Mar 2006", "end": "Jun 2006", "country": "AR" }
+  ],
+  "projects": [
+    {
+      "title": { "en": "Senior Frontend Software Engineer at Treatwell", "es": "Senior Frontend Software Engineer en Treatwell" },
+      "date": "Oct 2022 - Present",
+      "description": {
+        "en": "My primary role is Senior Frontend Software Engineer. I also mentor a Junior QA and contribute as an SDET and Backend Java Developer. As a side project, I created an end-to-end test suite because the code was barely tested and difficult to test at lower layers. The goal was to cover as much functionality as possible and then refactor with confidence, allowing the team to add unit tests and reduce the number of bugs reported after each release.",
+        "es": "Mi responsabilidad principal es la de Senior Frontend Software Engineer. También mentorizo a una persona Junior de QA y colaboro como SDET y desarrollador Backend Java. Como proyecto paralelo, creé una suite de pruebas end-to-end, ya que el código apenas estaba probado y era difícil probarlo en capas inferiores. El objetivo era cubrir la mayor parte de la funcionalidad posible y después refactorizar con confianza para permitir al equipo añadir pruebas unitarias y reducir los errores reportados tras cada release."
+      },
+      "tags": ["React", "Redux", "QA/SDET", "E2E", "Unit testing"]
+    },
+    {
+      "title": { "en": "Full Stack Developer for British Sky Broadcasting Ltd (SKY) at Merkle Inc", "es": "Full Stack Developer para British Sky Broadcasting Ltd (SKY) en Merkle Inc" },
+      "date": "Feb 2020 - Sep 2020",
+      "description": {
+        "en": "Full-stack developer working with Java 8, Cucumber, Selenium-JVM, Aurelia, Redux, and React in a Scrum team of seven people: three developers, three QAs, and one Scrum Master/Team Lead/Product Owner.",
+        "es": "Desarrollador full-stack trabajando con Java 8, Cucumber, Selenium-JVM, Aurelia, Redux y React en un equipo Scrum de siete personas: tres desarrolladores, tres QAs y un Scrum Master/Team Lead/Product Owner."
+      },
+      "tags": ["Java 8", "React", "Aurelia", "Cucumber", "Selenium"]
+    },
+    {
+      "title": { "en": "Tech Lead at Axa Holding (via K-Lagan Consulting)", "es": "Tech Lead en Axa Holding (a través de K-Lagan Consulting)" },
+      "date": "Mar 2019 - Oct 2019",
+      "description": {
+        "en": "Tech Lead in a team of six developers, one Scrum Master, and one Team Lead. The team worked within a highly hierarchical structure and was beginning a transition to Agile ways of working. During my six months there, I helped the team adopt transition architectures agreed with the architecture department, fully embrace TDD, and improve the quality of its deliveries.",
+        "es": "Tech Lead en un equipo formado por seis desarrolladores, un Scrum Master y un Team Lead. El equipo trabajaba dentro de una estructura muy jerárquica y estaba comenzando una transición hacia formas de trabajo ágiles. Durante los seis meses que estuve allí, ayudé al equipo a adoptar arquitecturas de transición acordadas con el departamento de arquitectura, aplicar TDD de forma completa y mejorar la calidad de sus entregas."
+      },
+      "tags": ["Tech Lead", "Agile transition", "Architecture", "TDD", "Quality"]
+    },
+    {
+      "title": { "en": "Dev Lead for British Sky Broadcasting Ltd (SKY) at Merkle Inc", "es": "Dev Lead para British Sky Broadcasting Ltd (SKY) en Merkle Inc" },
+      "date": "Oct 2013 - Feb 2019",
+      "description": {
+        "en": "Dev Lead in a Scrum team of six to eight people. Responsibilities included mentoring developers and QAs, software architecture, technical contact for other Sky teams, backup Scrum Master/Product Owner, and full-stack development. Work included several React and Redux front ends using Sky Toolkit, plus the Billing View SPA built with Durandal, Jasmine, Cucumber, Selenium, Java, and Spring 3. I also created Maven plugins and a Jasmine test bed for Durandal modules and widgets.",
+        "es": "Dev Lead en un equipo Scrum de seis a ocho personas. Las responsabilidades incluían mentoría de desarrolladores y QAs, arquitectura de software, contacto técnico para otros equipos de Sky, backup de Scrum Master/Product Owner y desarrollo full-stack. El trabajo incluyó varios front ends con React y Redux usando Sky Toolkit, además de la SPA Billing View con Durandal, Jasmine, Cucumber, Selenium, Java y Spring 3. También creé plugins de Maven y un entorno de pruebas Jasmine para módulos y widgets de Durandal."
+      },
+      "tags": ["Architecture", "Mentoring", "React", "Durandal", "Java", "Maven"]
+    }
+  ]
+}
